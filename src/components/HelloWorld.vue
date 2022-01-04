@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div class="hello bg-gray-200">
     <h1>{{ msg }}</h1>
     <p>
      this is the change in create
