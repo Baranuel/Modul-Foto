@@ -201,6 +201,7 @@ module.exports = {
       lg: ['0 10px 8px rgba(0, 0, 0, 0.04)', '0 4px 3px rgba(0, 0, 0, 0.1)'],
       xl: ['0 20px 13px rgba(0, 0, 0, 0.03)', '0 8px 5px rgba(0, 0, 0, 0.08)'],
       '2xl': '0 25px 25px rgba(0, 0, 0, 0.15)',
+      custom:'0 2px 6px 1px 0 rgba(0,0,0,1)',
       none: '0 0 #0000',
     },
     fill: { current: 'currentColor' },
