@@ -1,13 +1,26 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link> | 
-    <router-link to="/user">User</router-link>
-  </div>
-  <router-view/>
+  <Header v-bind:class="{ active: isActive }"/>
+ <router-view/>
+  <Footer/>
+ 
 </template>
 
+<script>
+import Header from './components/Header.vue'
+import Footer from './components/Footer.vue'
+
+export default {
+    name:'App',
+    components:{
+        Header,
+        Footer
+               },
+}
+</script>
+
 <style>
+@import './assets/variables.css';
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital@0;1&display=swap');
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -16,16 +29,9 @@
   color: #2c3e50;
 }
 
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+html {
+  background:rgb(11, 11, 34)
 }
 </style>
+
+
