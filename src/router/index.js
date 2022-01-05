@@ -2,7 +2,6 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import Shop from '../views/Shop.vue'
 import Product from '../views/Product.vue'
-import Studio from '../views/Studio.vue'
 
 const routes = [
   {
@@ -34,11 +33,7 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component:Product
   },
-  {
-    path:'/studio',
-    name:"studio",
-    component:Studio
-  }
+
 ]
 
 const router = createRouter({
