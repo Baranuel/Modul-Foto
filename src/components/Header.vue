@@ -1,13 +1,13 @@
 <template>
   <header role="banner" class="flex py-8 bg-red-100 justify-center text-xl font-quicksand" :class="{ indexNav: $route.name == 'Home' }">
-    <div class="contentWrapper  flex  justify-between items-center container mx-4 px-4" >
+    <div class="contentWrapper flex justify-between items-center container mx-4 px-4" >
       <h1 class="font-rufina font-normal">modul foto</h1>
       <nav id="nav" role="navigation">
         <ul class="flex items-center justify-around">
           <li><router-link to="/">Home</router-link></li>
           <li><router-link to="/about">About</router-link></li>
           <li><router-link to="/studio">Studio</router-link></li>
-          <li id="headerLogin" class="p-3 bg-blue-100">
+          <li id="headerLogin" class="px-2 py-1 bg-blue-100 rounded-sm">
             <router-link to="/user">Login</router-link>
           </li>
         </ul>
@@ -18,21 +18,12 @@
 
 <script>
 export default {
-  data() {
-  },
+
 };
 </script>
 
-<style>
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap");
+<style scoped>
 
-.font-quicksand {
-  font-family: "Quicksand", sans-serif;
-}
-.font-rufina {
-  font-family: "Rufina", serif;
-}
 
 .indexNav{
   background-color: rgba(255, 0, 0, 0) !important;
