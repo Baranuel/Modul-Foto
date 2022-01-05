@@ -3,6 +3,7 @@ import Home from '../views/Home.vue'
 import Shop from '../views/Shop.vue'
 import Product from '../views/Product.vue'
 
+// we are in the main
 const routes = [
   {
     path: '/',
