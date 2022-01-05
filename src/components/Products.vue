@@ -1,27 +1,34 @@
 <template>
-<div class=" bg-red-100  w-9/12 flex justify-center mx-auto ">
-
+<div class=" bg-red-100  w-9/12 flex flex-col justify-center items-center mx-auto ">
+        <h1 class="self-start ml-36">Your Pictures</h1>
   <div class="grid  w-8/12 xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-2  grid-rows-auto gap-4 gap-y-6 m-6" >
-      <headImage v-for="headline in headlines" :key="headline.id" :src="'./assets/' + headline.headline" class=" h-52 w-60 object-fill object-center bg-gray-400 justify-self-center customShadow ">
-          <h1>{{headline.id}}</h1>
-      </headImage>
+      <div v-for="product in products" :key="product.id"
+       class="  bg-gray-400 justify-self-center customShadow"
+       :product="product"
+       >
+                 <router-link :to="`/product/${product.id}`">
+        <Picture :product="product"/>
+                 </router-link>
+      </div>
   </div>
 </div>
 </template>
 
 <script>
-import headlines from '../data/products'
-import headImage from './headImage.vue'
+import products from '../data/products'
+import Picture from './Picture.vue'
+
 export default {
     name:'Products',
     components:{
-        headImage
+        Picture
+  
     },
     data(){
         return{
-            headlines
+            products
         }
-    }
+    },
 }
 </script>
 
