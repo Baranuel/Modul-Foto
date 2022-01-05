@@ -1,14 +1,13 @@
 <template>
-<div class=" bg-red-100  w-9/12 flex flex-col justify-center items-center mx-auto ">
+<div class=" bg-red-100  w-9/12 flex flex-col justify-center items-center mx-auto my-12 ">
         <h1 class="self-start ml-36">Your Pictures</h1>
   <div class="grid  w-8/12 xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-2  grid-rows-auto gap-4 gap-y-6 m-6" >
       <div v-for="product in products" :key="product.id"
-       class="  bg-gray-400 justify-self-center customShadow"
-       :product="product"
-       >
-                 <router-link :to="`/product/${product.id}`">
-        <Picture :product="product"/>
-                 </router-link>
+        class="  bg-gray-400 justify-self-center customShadow"
+        :product="product">
+            <router-link :to="`/product/${product.id}`">
+            <Picture :product="product"/>
+            </router-link>
       </div>
   </div>
 </div>

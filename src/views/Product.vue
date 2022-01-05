@@ -1,26 +1,34 @@
 <template>
   <div>
         {{$route.params.id}}
+        <img :src="'./assets/' + specificProduct.headline" alt="">
+        
+
   </div>
 </template>
 
 <script>
 import products from '../data/products'
+
 export default {
     name:"Product",
+    components:{ }, 
     data(){
         return{
-            products
+            products,
+            currentProduct:{},
 
         }
     },
-    methods:{
-        call(){
-            console.log(12321)
+    computed:{
+        specificProduct(){
+                 return this.products.find(product => product.id == this.$route.params.id)
         }
     },
+    methods:{  
+    },
     beforeMount(){
-       this.call()
+        this.currentProduct = this.specificProduct 
     }
 
 }

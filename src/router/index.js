@@ -2,6 +2,7 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import Shop from '../views/Shop.vue'
 import Product from '../views/Product.vue'
+import Studio from '../views/Studio.vue'
 
 // we are in the main
 const routes = [
@@ -21,18 +22,17 @@ const routes = [
   {
     path: '/user',
     name: 'user',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component:Shop
   },
   {
     path: '/product/:id',
     name: 'product',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component:Product
+  },
+  {
+    path: '/studio',
+    name: 'Studio',
+    component:Studio
   },
   
 
