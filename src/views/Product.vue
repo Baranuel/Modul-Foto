@@ -1,6 +1,6 @@
 <template>
   <div>
-      
+      {{kinderTExt}}
   </div>
 </template>
 
@@ -11,6 +11,7 @@ export default {
     data(){
         return{
             products
+
         }
     },
     methods:{
