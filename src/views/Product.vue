@@ -1,6 +1,6 @@
 <template>
   <div>
-      {{kinderTExt}}
+        {{$route.params.id}}
   </div>
 </template>
 

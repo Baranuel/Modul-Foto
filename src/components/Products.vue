@@ -6,7 +6,9 @@
        class="  bg-gray-400 justify-self-center customShadow"
        :product="product"
        >
+                 <router-link :to="`/products/${product.id}`">
         <Picture :product="product"/>
+                 </router-link>
       </div>
   </div>
 </div>
