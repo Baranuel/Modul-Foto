@@ -1,18 +1,19 @@
 <template>
-  <div>
-        {{$route.params.id}}
+    <div  class="h-64 bg-gray-100 w-9/12 mx-auto mt-8 text-left">
+    <User :user="currentUser"/>
+    <router-link :to="`/user/${currentUser.id}`" class="text-red-500"> choose different image</router-link>
+    </div>
+  <div  class="h-64 bg-gray-100 w-9/12 mx-auto mt-8 flex flex-row">
         <img :src="'./assets/' + specificProduct.headline" alt="">
-        
-
   </div>
 </template>
 
 <script>
 import data from '../data/products'
-
+import User from '../components/User.vue'
 export default {
     name:"Product",
-    components:{ }, 
+    components:{ User}, 
     data(){
         return{
             data,

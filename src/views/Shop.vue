@@ -1,7 +1,6 @@
 <template>
   <div class="">
-      <div class="h-64 bg-gray-100 w-9/12 mx-auto mt-8 flex flex-row">
-      
+      <div class="h-64 bg-gray-100 w-9/12 mx-auto mt-8 flex flex-row ">
         <User :user="currentUser"/>
        </div>
       <Divide/>
