@@ -9,11 +9,8 @@
           <li><router-link to="/about">About</router-link></li>
           <li><router-link to="/studio">Studio</router-link></li>
           <li id="headerLogin" class="px-2 py-1 bg-blue-100 rounded-sm">
-<<<<<<< HEAD
           <router-link to="/user">Login</router-link>
-=======
             <router-link to="/login">Login</router-link>
->>>>>>> ad5ff22898140c94195859f06a78ef6358de082f
           </li>
         </ul>
       </nav>
