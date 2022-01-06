@@ -32,6 +32,10 @@ export default {
 html {
   background:rgb(11, 11, 34)
 }
+
+body{
+ overflow-x: hidden;
+}
 </style>
 
 
