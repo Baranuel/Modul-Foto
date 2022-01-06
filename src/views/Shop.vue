@@ -1,6 +1,5 @@
 <template>
   <div class="">
-
       <User/>
       <Divide/>
       <Products :photos="photos"/>
@@ -29,13 +28,14 @@ export default {
     importData(){
         for(let i=0; i<this.data.length; i++){
            this.photos = this.data[i].photos
-            this.users = this.data[i]
         }
+                console.log(this.data)
     }
     },
 
     beforeMount(){
         this.importData()
+        console.log(this.data)
     }
 
 
