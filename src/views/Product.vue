@@ -1,27 +1,44 @@
 <template>
-  <div>
-        {{$route.params.id}}
+    <div  class="h-64 bg-gray-100 w-9/12 mx-auto mt-8 text-left">
+    <User :user="currentUser"/>
+    <router-link :to="`/user/${currentUser.id}`" class="text-red-500"> choose different image</router-link>
+    </div>
+  <div  class="h-64 bg-gray-100 w-9/12 mx-auto mt-8 flex flex-row">
+        <img :src="'./assets/' + specificProduct.headline" alt="">
   </div>
 </template>
 
 <script>
-import products from '../data/products'
+import data from '../data/products'
+import User from '../components/User.vue'
 export default {
     name:"Product",
+    components:{ User}, 
     data(){
         return{
-            products
+            data,
+            photos:[],
+            currentProduct:{},
+            currentUser:""
 
         }
     },
-    methods:{
-        call(){
-            console.log(12321)
+    computed:{
+        specificProduct(){
+                 return this.photos.find(photo => photo.pictureId == this.$route.params.id)
+        },
+        specificUser(){
+            return this.data.find(user => user.name == this.$route.params.name )
         }
     },
+
     beforeMount(){
-       this.call()
+        this.currentUser = this.specificUser
+        this.photos = this.currentUser.photos
+        console.log(this.$route)
+
     }
+
 
 }
 </script>
