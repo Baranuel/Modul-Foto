@@ -11,23 +11,23 @@
             <p class="pl-16 ">select different package:</p>
             <p class="ml-2">{{currentBundle}}</p>
             <div class=" flex flex-col ml-3" >
-                <button @click="selectBundle()" v-for="bundle,index in bundles" :key="index">{{bundle.name}}</button>
+                <button  @click="currentBundle = bundle.name, change() " v-for="bundle,index in bundles" :key="index">{{bundle.name}}</button>
             </div>
             </div>
-            <div class=" w-9/12 mx-auto px-8 my-4  bg-red-100 flex " v-for="bundle, index in bundles" :key="index">
+            <div   class=" w-9/12 mx-auto px-8 my-4  bg-red-100 flex ">
             <div class="w-1/3 flex">
         <Picture class=" self-center h-5/6 w-full " :picture="specificProduct"/>
             </div>
         <div class="p-4 flex flex-col justify-center mx-auto ">
-            <h1 class="text-4xl my-4 font-maitree ">{{bundle.name}}</h1>
-            <ul v-for="desc, index in bundle.description" :key="index" class=" px-8">
+            <h1 class="text-4xl my-4 font-maitree ">{{selectedBundle.name}}</h1>
+            <ul v-for="desc, index in selectedBundle.description" :key="index" class=" px-8">
                 <li class="font-maitree"> <strong>{{desc}}</strong></li>
             </ul>
             <h2 class="my-2 px-8">View picture</h2>
             <div class="flex w-full justify-between">
                 <div class="px-8">
                     <h1>Price</h1>
-                    <h1>{{bundle.price}} Kr. </h1>
+                    <h1>{{selectedBundle.price}} Kr. </h1>
                 </div>
                 <div class="">
                     <h1>Quantity</h1>
@@ -59,8 +59,7 @@ export default {
             currentUser:"",
             bundles:[],
             currentBundle:"2022 Standard package",
-
-            SelectedBundle:{}
+            selectedBundle:{}
 
         }
     },
@@ -71,14 +70,15 @@ export default {
         specificUser(){
             return this.data.find(user => user.name == this.$route.params.name )
         },
-        findBundle(){
+        selectBundle(){
             return this.bundles.find(bundle => bundle.name == this.currentBundle)
         }
     },
     methods:{
-        selectBundle(){
-           console.log(this.selectedBundle =this.target)
+        change(){
+            this.selectBundle();
         }
+  
     },
 
     beforeMount(){
@@ -86,9 +86,11 @@ export default {
         this.photos = this.currentUser.photos
         this.currentProduct = this.specificProduct
         this.bundles = this.currentProduct.bundles
-        this.selectedBundle = this.findBundle
+
+        this.selectedBundle = this.selectBundle    
+
         console.log(this.bundles)
-        console.log(this.findBundle)
+        console.log(this.selectedBundle)
 
     }
 
