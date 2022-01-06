@@ -18,23 +18,23 @@ export default {
             data,
             photos:[],
             currentProduct:{},
+            currentUser:""
 
         }
     },
     computed:{
         specificProduct(){
                  return this.photos.find(photo => photo.pictureId == this.$route.params.id)
+        },
+        specificUser(){
+            return this.data.find(user => user.name == this.$route.params.name )
         }
     },
-    methods:{  
-        importData(){
-        for(let i=0; i<this.data.length; i++){
-           this.photos = this.data[i].photos
-        }
-            }
-    },
+
     beforeMount(){
-        this.importData()
+        this.currentUser = this.specificUser
+        this.photos = this.currentUser.photos
+        console.log(this.$route)
 
     }
 

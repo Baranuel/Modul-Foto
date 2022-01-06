@@ -1,12 +1,14 @@
 <template>
-  <div class="h-64 bg-gray-100 w-9/12 mx-auto mt-8" >
+  <div class="" >
+  
+  <h1>name: {{user.name}}</h1>
   </div>
 </template>
 
 <script>
 export default {
     name:"user",
-    props:[""],
+    props:["user"],
 
     data(){
         return{

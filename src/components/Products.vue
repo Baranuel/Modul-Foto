@@ -1,11 +1,11 @@
 <template>
 <div class=" bg-red-100  w-9/12 flex flex-col justify-center items-center mx-auto my-8">
-        <h1 class="self-start ml-36">Your Pictures</h1>
+        <h1 class="self-start ">Your Pictures</h1>
   <div class="grid  w-8/12 xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-2  grid-rows-auto gap-4 gap-y-6 m-6" >
       <div v-for="picture in photos" :key="picture.pictureId"
         class="  bg-gray-400 justify-self-center customShadow"
         >
-            <router-link :to="`/product/${picture.pictureId}`">
+            <router-link :to="`${user.name}/product/${picture.pictureId}`">
             <Picture :picture="picture"/>
             </router-link>
       </div>
@@ -16,22 +16,31 @@
 <script>
 
 
-import data from '../data/products'
 import Picture from './Picture.vue'
 
 
 export default {
     name:'Products',
+    props:["user"],
     components:{
         Picture
     },
-    props:["photos"],
     data(){
         return{
-            data,
+
+            photos:[]
         }
         
     },
+    computed:{
+        createPhotos(){
+            return this.user.photos
+            
+        }
+    },
+    beforeMount(){
+        this.photos = this.createPhotos
+    }
 
 }
 </script>

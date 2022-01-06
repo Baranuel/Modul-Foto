@@ -196,7 +196,7 @@ export default [
                   [
                      {
                     pictureId:1,
-                    headline:"girl-heart.jpg",
+                    headline:"girl-baw.jpg",
                     bundles:
                             [
                                 {
@@ -316,7 +316,7 @@ export default [
                         },
                 {
                     pictureId:3,
-                    headline:"girl-front.jpg",
+                    headline:"girl-baw.jpg",
                     bundles:
                             [
                                 {
