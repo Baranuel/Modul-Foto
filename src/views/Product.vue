@@ -8,28 +8,36 @@
 </template>
 
 <script>
-import products from '../data/products'
+import data from '../data/products'
 
 export default {
     name:"Product",
     components:{ }, 
     data(){
         return{
-            products,
+            data,
+            photos:[],
             currentProduct:{},
 
         }
     },
     computed:{
         specificProduct(){
-                 return this.products.find(product => product.id == this.$route.params.id)
+                 return this.photos.find(photo => photo.pictureId == this.$route.params.id)
         }
     },
     methods:{  
+        importData(){
+        for(let i=0; i<this.data.length; i++){
+           this.photos = this.data[i].photos
+        }
+            }
     },
     beforeMount(){
-        this.currentProduct = this.specificProduct 
+        this.importData()
+
     }
+
 
 }
 </script>
