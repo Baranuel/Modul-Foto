@@ -9,33 +9,12 @@
             <h1 class="font-maitree text-4xl p-2">Packages</h1>
             <div class="flex">
             <p class="pl-16 ">select different package:</p>
-            <p class="ml-2">{{currentBundle}}</p>
-            <div class=" flex flex-col ml-3" >
-                <button  @click="currentBundle = bundle.name, change() " v-for="bundle,index in bundles" :key="index">{{bundle.name}}</button>
+            <p @click="shown = !shown" class="ml-2 hover: cursor-pointer text-mainRed">{{selectedBundle}}</p>
+            <div v-show="shown" class=" flex flex-col ml-3" >
+                <button  @click="selectedBundle = bundle.name " v-for="bundle,index in bundles" :key="index">{{bundle.name}}</button>
             </div>
             </div>
-            <div   class=" w-9/12 mx-auto px-8 my-4  bg-red-100 flex ">
-            <div class="w-1/3 flex">
-        <Picture class=" self-center h-5/6 w-full " :picture="specificProduct"/>
-            </div>
-        <div class="p-4 flex flex-col justify-center mx-auto ">
-            <h1 class="text-4xl my-4 font-maitree ">{{selectedBundle.name}}</h1>
-            <ul v-for="desc, index in selectedBundle.description" :key="index" class=" px-8">
-                <li class="font-maitree"> <strong>{{desc}}</strong></li>
-            </ul>
-            <h2 class="my-2 px-8">View picture</h2>
-            <div class="flex w-full justify-between">
-                <div class="px-8">
-                    <h1>Price</h1>
-                    <h1>{{selectedBundle.price}} Kr. </h1>
-                </div>
-                <div class="">
-                    <h1>Quantity</h1>
-                <button>BUY</button>
-                </div>
-            </div>
-        </div>
-            </div>
+            <Bundle :specificProduct="specificProduct" :selectedBundle="selectedBundle"/>
         </div>
   </div>
 </template>
@@ -44,12 +23,12 @@
 import data from '../data/products'
 import User from '../components/User.vue'
 import Divide from '../components/Divide.vue'
-import Picture from '../components/Picture.vue'
+import Bundle from '../components/Bundle.vue'
 export default {
     name:"Product",
     components:{ User,
                 Divide,
-                Picture
+                Bundle
     }, 
     data(){
         return{
@@ -57,9 +36,9 @@ export default {
             photos:[],
             currentProduct:{},
             currentUser:"",
-            bundles:[],
-            currentBundle:"2022 Standard package",
-            selectedBundle:{}
+            bundles:[], 
+            selectedBundle:"2022 Standard package",
+            shown:false
 
         }
     },
@@ -70,14 +49,8 @@ export default {
         specificUser(){
             return this.data.find(user => user.name == this.$route.params.name )
         },
-        selectBundle(){
-            return this.bundles.find(bundle => bundle.name == this.currentBundle)
-        }
     },
     methods:{
-        change(){
-            this.selectBundle();
-        }
   
     },
 
@@ -87,10 +60,8 @@ export default {
         this.currentProduct = this.specificProduct
         this.bundles = this.currentProduct.bundles
 
-        this.selectedBundle = this.selectBundle    
 
         console.log(this.bundles)
-        console.log(this.selectedBundle)
 
     }
 
