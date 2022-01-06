@@ -1,7 +1,7 @@
 <template>
   <div class="text-left p-4" >
-  <h3>id: {{user.id}}</h3>
   <h1>name: {{user.name}}</h1>
+  <h3>id: {{user.id}}</h3>
   </div>
 </template>
 
