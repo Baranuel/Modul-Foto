@@ -10,8 +10,8 @@
             <div class="relative">
             <p class="pl-16 ">select different package:</p>
             <p @click="shown = !shown" class="ml-2 hover: cursor-pointer text-mainRed pl-16 inline">{{selectedBundle}}</p>
-            <div v-show="shown" class=" flex flex-col ml-3 shadow-xl p-4  bg-white absolute left-64 top-0" >
-                <button  @click="selectedBundle = bundle.name " v-for="bundle,index in bundles" :key="index">{{bundle.name}}</button>
+            <div @click="shown = !shown" v-show="shown" class=" flex flex-col ml-3 shadow-xl p-4  bg-white absolute left-64 top-0" >
+                <button  @click="selectedBundle = bundle.name " class="hover:text-mainRed" v-for="bundle,index in bundles" :key="index">{{bundle.name}}</button>
             </div>
             </div>
             <Bundle :specificProduct="specificProduct" :selectedBundle="selectedBundle"/>
