@@ -28,10 +28,6 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
-
-html {
-  background:rgb(11, 11, 34)
-}
 </style>
 
 

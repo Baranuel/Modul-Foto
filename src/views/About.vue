@@ -1,11 +1,19 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+<Intro/>
 </template>
 
 <script>
+import Intro from '../components/Intro.vue'
 export default {
- 
+  name:'About',
+    components:{
+               Intro
+               },
+    data(){
+        return {
+
+
+        }
+    },
 }
 </script>
