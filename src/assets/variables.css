@@ -6,6 +6,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 
+.grey-section {
+  background-color:#F9F9F9;
+}
+
 .font-quicksand {
   font-family: "Quicksand", sans-serif;
 }
@@ -34,5 +38,27 @@
   font-size: 48px;
   font-weight: 400;
   text-align: left;
-  margin-bottom: 1%;
+  margin-bottom: 1.5rem;
+}
+
+.ourprocess-title {
+  font-family: "Lora", serif;
+  font-size: 48px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.headline-process {
+  font-family: "Lora", serif;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  color: #BB2323;
+}
+
+.getintouch {
+  font-family: "Lora", serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #BB2323;
 }
