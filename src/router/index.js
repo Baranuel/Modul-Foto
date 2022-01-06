@@ -3,6 +3,7 @@ import Home from '../views/Home.vue'
 import Shop from '../views/Shop.vue'
 import Product from '../views/Product.vue'
 import Studio from '../views/Studio.vue'
+import Login from '../views/Login.vue'
 
 // we are in the main
 const routes = [
@@ -20,12 +21,17 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   },
   {
-    path: '/user',
+    path: '/login',
+    name: 'login',
+    component:Login
+  },
+  {
+    path: '/user/:id',
     name: 'user',
     component:Shop
   },
   {
-    path: '/product/:id',
+    path: '/user/:name/product/:id',
     name: 'product',
     component:Product
   },
