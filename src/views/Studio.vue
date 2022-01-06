@@ -1,24 +1,14 @@
 <template>
-<Intro/>
-<Divide/>
+<Intro title="Studio"/>
+
 </template>
 
 <script>
-import Divide from '../components/Divide.vue'
 import Intro from '../components/Intro.vue'
 export default {
     name:'Studio',
     components:{
-               Divide,
                Intro
-               },
-    data(){
-        return {
-
-
-        }
-    },
-
-
+               }
 }
 </script>

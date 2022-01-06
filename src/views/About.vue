@@ -1,5 +1,5 @@
 <template>
-<Intro/>
+<Intro title="About us"/>
 </template>
 
 <script>
@@ -8,12 +8,6 @@ export default {
   name:'About',
     components:{
                Intro
-               },
-    data(){
-        return {
-
-
-        }
-    },
+               }
 }
 </script>

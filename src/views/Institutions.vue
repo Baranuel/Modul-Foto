@@ -1,5 +1,5 @@
 <template>
-<Intro/>
+<Intro title="Institutions"/>
 </template>
 
 <script>

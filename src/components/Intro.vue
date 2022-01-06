@@ -1,7 +1,7 @@
 <template>
 <div class="mb-28">
 <div class="w-9/12 mx-auto">
-  <h1 class="headline-large">Institutions</h1>
+  <h1 class="headline-large">{{ title }}</h1>
   <div class="flex gap-x-36">
 <div class="w-4/12">
   <h2 class="headline-regular">Our approach</h2>
@@ -16,7 +16,9 @@ We are more than just a photographs, we try to become friends with everyone we m
 
 <script>
 export default {
-
+name: 'Intro',
+props:
+['title']
 }
 </script>
 
