@@ -1,5 +1,5 @@
 <template>
-<div class="  px-2 py-6  bg-white m-2 shadow-xl font-maitree  ">
+<div class=" w-72 px-2 py-6  bg-white m-2 shadow-xl font-maitree  ">
             <div class="">
                 <img class="w-full h-72 object-fill" :src="`./assets/` + single.url " alt="">
             <div class>

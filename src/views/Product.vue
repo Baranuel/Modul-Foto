@@ -23,7 +23,7 @@
         <div class="w-9/12 mx-auto mt-24 ">
           <h1 class="font-maitree text-4xl p-2">Singles</h1>
         <div class=" flex flex-row flex-wrap  ">
-            <div class=" w-1/3" v-for="single, i in singles" :key="i">
+            <div class=" mx-auto min-w-min" v-for="single, i in singles" :key="i">
                 <Single :single="single"/>
             </div>
         </div>
