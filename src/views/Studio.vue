@@ -1,25 +1,21 @@
 <template>
-  <div class="about">
-         <Divide/>
-    <h1>This is the studio page</h1>
-     <Divide/>
-  </div>
+<Intro title="Studio"/>
+<OurProcess/>
+<VideoSections/>
+
 </template>
 
 <script>
-import Divide from '../components/Divide.vue'
+import Intro from '../components/Intro.vue'
+import OurProcess from '../components/OurProcess.vue'
+import VideoSections from '../components/VideoSections.vue'
+
 export default {
     name:'Studio',
     components:{
-               Divide
-               },
-    data(){
-        return {
-
-
-        }
-    },
-
-
+               Intro,
+               OurProcess,
+               VideoSections
+               }
 }
 </script>

@@ -1,7 +1,8 @@
 <template>
   <div class="">
-      <div class="h-64 bg-gray-100 w-9/12 mx-auto mt-8 flex flex-row ">
+      <div class="h-64 bg-gray-100 w-9/12 mx-auto mt-8 flex flex-col text-left justify-between ">
         <User :user="currentUser"/>
+          <p class="p-4">Choose a picture from the ones shown below and select the size you'd like to buy</p>
        </div>
       <Divide/>
       <Products :user="currentUser"/>
