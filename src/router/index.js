@@ -35,4 +35,4 @@ const routes = [
     name: 'product',
     component:Product
   },
-  {
+]
