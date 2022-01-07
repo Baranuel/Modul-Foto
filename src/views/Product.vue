@@ -4,23 +4,26 @@
     <router-link :to="`/user/${currentUser.id}`" class="text-mainRed p-4"> choose different image</router-link>
     </div>
     <Divide/>
-  <div class=" bg-gray-100 w-9/12 text-left mx-auto py-0 ">
-        <div clas="text-left ">
+  <div class=" w-9/12 mb-24 mx-auto py-0 ">
+        <div class=" w-9/12 mx-auto ">
+        <div>
+
             <h1 class="font-maitree text-4xl p-2">Packages</h1>
-            <div class="relative">
+            <div class="pb-8 relative">
             <p class="pl-16 ">select different package:</p>
             <p @click="shown = !shown" class="ml-2 hover: cursor-pointer text-mainRed pl-16 inline">{{selectedBundle}}</p>
             <div @click="shown = !shown" v-show="shown" class=" flex flex-col ml-3 shadow-xl p-4  bg-white absolute left-64 top-0" >
                 <button  @click="selectedBundle = bundle.name " class="hover:text-mainRed" v-for="bundle,index in bundles" :key="index">{{bundle.name}}</button>
             </div>
+        </div>
             </div>
             <Bundle :specificProduct="specificProduct" :selectedBundle="selectedBundle"/>
         </div>
         <Divide/>
-        <div>
+        <div class="w-9/12 mx-auto mt-24 ">
           <h1 class="font-maitree text-4xl p-2">Singles</h1>
-        <div class=" flex flex-row justify-center ">
-            <div class="" v-for="single, i in singles" :key="i">
+        <div class=" flex flex-row flex-wrap  ">
+            <div class=" w-1/3" v-for="single, i in singles" :key="i">
                 <Single :single="single"/>
             </div>
         </div>

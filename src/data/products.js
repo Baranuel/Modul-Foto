@@ -56,6 +56,16 @@ export default [
                                     price:123
                                 },
                                 {
+                                    name:"1* (18x25)",
+                                    url:"girl-heart-18x25.jpg",
+                                    price:123
+                                },
+                                {
+                                    name:"1* (18x25)",
+                                    url:"girl-heart-18x25.jpg",
+                                    price:123
+                                },
+                                {
                                     name:"2* (13x18)",
                                     url:"girl-heart-13x18.jpg",
                                     price:123
