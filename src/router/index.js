@@ -36,17 +36,3 @@ const routes = [
     component:Product
   },
   {
-    path: '/studio',
-    name: 'Studio',
-    component:Studio
-  },
-  
-
-]
-
-const router = createRouter({
-  history: createWebHashHistory(),
-  routes
-})
-
-export default router
