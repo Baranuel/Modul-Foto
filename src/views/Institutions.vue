@@ -14,7 +14,6 @@ import OurProcess from '../components/OurProcess.vue'
 import VideoSections from '../components/VideoSections.vue'
 import StaffFaculty from '../components/StaffFaculty.vue'
 import Testimonials from '../components/Testimonials.vue'
-import ReachOut from '../components/ReachOut.vue'
 
 export default {
  name:'Institutions',
@@ -24,7 +23,6 @@ export default {
                VideoSections,
                StaffFaculty,
                Testimonials,
-               ReachOut
                },
 }
 </script>
