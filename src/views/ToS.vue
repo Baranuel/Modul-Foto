@@ -1,7 +1,7 @@
 <template>
 <div class="grey-section pt-8 pb-16 ">
     <h2 class="headline-large w-9/12 mx-auto">Terms of Sale</h2>
-        <div class="w-9/12 mx-auto border-l-2 border-red-500 pl-20 grid grid-cols-2 gap-y-20 gap-x-20 pb-20">
+        <div class="w-9/12 mx-auto border-l-2 border-red-500 pl-20 grid grid-cols-2 gap-y-20 gap-x-20 mb-20">
         <div class="flex-inline">
         <i class="fas fa-shopping-basket fa-2x mb-8"></i><h6 class="getintouch inline ml-4 text-black font-medium">Conditions for first order</h6>
         <p class="paragraph-text">In the shopping basket, we have placed the order you have made on the registration form.
@@ -61,11 +61,53 @@ We point out that in the event of non-payment, DKK 100 will be added per Reminde
         </div>
 
 
-
-
-
         </div>
 </div>
+
+    <h2 class="headline-large w-9/12 mx-auto">Return Policy</h2>
+        <div class="w-9/12 mx-auto border-l-2 border-red-500 pl-20 grid grid-cols-2 gap-y-20 gap-x-20 mb-20">
+        <div class="flex-inline">
+        <i class="fas fa-shopping-basket fa-2x mb-8"></i><h6 class="getintouch inline ml-4 text-black font-medium">How to return</h6>
+        <p class="paragraph-text">In module photo, we always offer a 3 week full return policy once you have received photos from us.
+            <br><br>
+            Pictures you do not want to buy must be returned to us at the address:
+            <br>
+            <b>Modul Foto
+            <br>
+            Falkon Allé 3
+            <br>
+            2000 Frederiksberg
+            <br></b><br>
+            The envelope must be marked with your username and the text "return".
+            <br>
+            <b>Example: "Return 69XXX69"</b>
+            <br><br>
+            If you have paid by debit card, we will refund the amount via your debit card.
+            <br><br>
+            If you want to keep parts of the delivery, you must pay for what you keep. The unit prices appear from the invoice you have received. Please note that for partial returns, the discount we offer in the image packages will be waived. 
+You will NOT receive a new invoice with the new amount. If you are in doubt about what to pay, you can always contact us on our telephone number: <b>56 76 12 12</b>
+        </p>
+        </div>
+
+        <div class="flex-inline">
+        <i class="fas fa-shopping-basket fa-2x mb-8"></i><h6 class="getintouch inline ml-4 text-black font-medium">Is  your return a reproduction of images</h6>
+        <p class="paragraph-text">If, contrary to expectations, there should be problems with the quality of the delivered images, we would very much like to remake them. <br>
+The pictures must be returned to us within 3 weeks of receipt as a complaint to our office. The pictures must be accompanied by your invoice or other indication of who you are sending the pictures back from, as well as a clear description of what is wrong. Please attach a telephone number so we can contact you in case of doubt.
+<br><br>
+Pictures and description, must be sent to: <br>
+            <b>Modul Foto
+            <br>
+            Falkon Allé 3
+            <br>
+            2000 Frederiksberg
+            <br></b><br>
+            Write “Complaint” on the envelope.
+            <br> <br>
+            You will receive some new pictures as soon as possible.
+</p>
+        </div>
+        <router-link to="/contact"><div class="buttonRed w-60">Contact us</div></router-link>
+        </div>
 </template>
 
 <script>

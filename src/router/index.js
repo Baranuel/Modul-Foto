@@ -7,6 +7,7 @@ import Login from '../views/Login.vue'
 import Institutions from '../views/Institutions.vue'
 import GDPR from '../views/GDPR.vue'
 import ToS from '../views/ToS.vue'
+import Contact from '../views/Contact.vue'
 
 // we are in the main
 const routes = [
@@ -58,6 +59,12 @@ const routes = [
     name: 'ToS',
     component:ToS
   },
+  {
+    path: '/Contact',
+    name: 'Contact',
+    component:Contact
+  },
+  
   
 
 ]
