@@ -40,7 +40,23 @@
 
     <Gallery/>
    <ReachOut/>
-    <Tabs/>
+
+<section class="bg-red-100">
+   <tabs class="w-9/12 mx-auto" :options="{ useUrlFragment: false }">
+       
+        <tab name="School portraits">
+            <Tabz title="School portraits" description="Its FUN" />
+        </tab>
+  
+          <tab name="Class photos">
+            <Tabz title="Class photos" description="Its HELL FUN" />
+        </tab>
+  
+    
+    </tabs>
+</section>
+
+
 </template>
 
 <script>
@@ -49,14 +65,15 @@
 import Video from "../components/VideoPlayer.vue";
 import Gallery from "../components/Gallery.vue";
 import ReachOut from "../components/ReachOut.vue";
-import Tabs from "../components/Tabs.vue";
+import Tabz from "../components/Tabz.vue"
+
 
 export default {
   components: {
     Video,
     Gallery,
     ReachOut,
-    Tabs
+    Tabz,
   },
 };
 
@@ -93,5 +110,6 @@ export default {
     padding: 2rem 0;
   }
 }
+
 
 </style>
