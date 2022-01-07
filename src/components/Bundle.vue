@@ -1,5 +1,5 @@
 <template>
-        <div   class=" w-9/12 mx-auto px-8 my-4  bg-red-100 flex ">
+        <div   class="  mx-auto px-8 my-4 bg-white shadow-xl flex ">
             <div class="w-1/3 flex">
         <img class=" self-center h-5/6 w-full " :src="`./assets/` + bundle.url" />
             </div>
@@ -10,13 +10,13 @@
             </ul>
             <h2 class="my-2 px-8">View picture</h2>
             <div class="flex w-full justify-between">
-                <div class="px-8">
+                <div class="px-8 self-end">
                     <h1>Price</h1>
                     <h1>{{bundle.price}} Kr. </h1>
                 </div>
                 <div class="">
                     <h1>Quantity</h1>
-                <button>BUY</button>
+                <Button/>
                 </div>
             </div>
         </div>
@@ -24,17 +24,17 @@
 </template>
 
 <script>
-
+import Button from '../components/Button.vue'
 export default {
     name:"bundle",
+    components:{
+        Button
+    },
     props:["specificProduct","selectedBundle"],
     watch:{
         selectedBundle: function (){
             this.changeBundle()
         },
-    },
-    components:{
-
     },
     data(){
         return{
@@ -55,7 +55,6 @@ export default {
     methods:{
         changeBundle(){
             this.bundle = this.bundles.find(bundle => bundle.name === this.selectedBundle)
-            console.log(this.bundles)
         }
     },
     beforeMount(){
