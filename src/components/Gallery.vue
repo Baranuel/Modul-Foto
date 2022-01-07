@@ -16,6 +16,20 @@
 </template>
 
 <script>
+import Masonry from 'masonry'
+import image from "../assets/logo.png"
+
+export default {
+
+  data() {
+    return {
+      imageTest: image,
+    };
+  },
+  beforeMount(){
+    console.log(Masonry)
+  }
+};
 /* import image from "../assets/logo.png";
 const Masonry = require('masonry-layout')
 
