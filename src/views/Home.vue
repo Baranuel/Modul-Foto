@@ -45,13 +45,16 @@
    <tabs class="w-9/12 mx-auto" :options="{ useUrlFragment: false }">
        
         <tab name="School portraits">
-            <Tabz title="School portraits" description="Its FUN" />
+            <Tabz title="School portraits" description="A picture of the entire class!"  filename="girl.png" />
         </tab>
   
-          <tab name="Class photos">
-            <Tabz title="Class photos" description="Its HELL FUN" />
+        <tab name="Class photos">
+            <Tabz title="Class photos" description="Its HELL FUN" filename="girl.png"   />
         </tab>
-  
+
+          <tab name="Full school photo">
+            <Tabz title="Class photos" description="Its HELL FUN" filename="girl.png"   />
+        </tab>
     
     </tabs>
 </section>
@@ -62,11 +65,11 @@
 <script>
 // @ is an alias to /src
 
+
 import Video from "../components/VideoPlayer.vue";
 import Gallery from "../components/Gallery.vue";
 import ReachOut from "../components/ReachOut.vue";
 import Tabz from "../components/Tabz.vue"
-
 
 export default {
   components: {

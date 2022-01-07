@@ -77,24 +77,3 @@
 Tab styling
 */
 
-.tabs-component-tab-a {
-  margin-right: 2rem;
-}
-.tabs-component{
-  background-color: rgb(255, 191, 197);
-  padding: 3rem 0;
-  
-}
-
-.tabs-component-tabs{
-  display: flex;
-}
-
-.is-active a{
-  border-bottom: rgb(255, 40, 40) solid 1px;
-}
-
-.tabs-component-tabs a {
-  padding-bottom: 0.2em;
-}
-      
