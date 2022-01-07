@@ -114,17 +114,17 @@ export default [
                             [
                                 {
                                     name:"1* (18x25)",
-                                    url:"girl-baw-18x25.jpg",
-                                    price:123
+                                    url:"girl-baw.jpg",
+                                    price:143
                                 },
                                 {
                                     name:"2* (13x18)",
-                                    url:"girl-baw-13x18.jpg",
+                                    url:"girl-baw.jpg",
                                     price:123
                                 },
                                 {
                                     name:"28* (3x4)",
-                                    url:"girl-baw-3x4.jpg",
+                                    url:"girl-baw.jpg",
                                     price:123
                                 },
                             ]
@@ -280,17 +280,17 @@ export default [
                             [
                                 {
                                     name:"1* (18x25)",
-                                    url:"girl-baw-18x25.jpg",
+                                    url:"girl-baw.jpg",
                                     price:123
                                 },
                                 {
                                     name:"2* (13x18)",
-                                    url:"girl-baw-13x18.jpg",
+                                    url:"girl-baw.jpg",
                                     price:123
                                 },
                                 {
                                     name:"28* (3x4)",
-                                    url:"girl-baw-3x4.jpg",
+                                    url:"girl-baw.jpg",
                                     price:123
                                 },
                             ]
