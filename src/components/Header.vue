@@ -10,7 +10,6 @@
           <li><router-link to="/studio">Studio</router-link></li>
           <li><router-link to="/Institutions">Institutions</router-link></li>
           <li id="headerLogin" class="px-2 py-1 bg-blue-100 rounded-sm">
-          <router-link to="/user">Login</router-link>
             <router-link to="/login">Login</router-link>
           </li>
         </ul>
@@ -30,6 +29,8 @@ export default {
 
 
 .indexNav{
+  position:fixed !important;
+  top:0;
   background-color: rgba(255, 0, 0, 0) !important;
   color: white !important;
   font-weight: 400 !important;
@@ -56,7 +57,8 @@ header a {
 }
 
 .headerFixed{
-    position: fixed;
+    position: sticky;
+    top:0;
     width: 100%;
     z-index: 99;
 }

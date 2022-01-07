@@ -4,6 +4,7 @@ import Shop from '../views/Shop.vue'
 import Product from '../views/Product.vue'
 import Studio from '../views/Studio.vue'
 import Login from '../views/Login.vue'
+import Institutions from '../views/Institutions.vue'
 
 // we are in the main
 const routes = [
@@ -35,4 +36,23 @@ const routes = [
     name: 'product',
     component:Product
   },
+  {
+    path: '/studio',
+    name: 'Studio',
+    component:Studio
+  },
+  {
+    path: '/institutions',
+    name: 'institutions',
+    component:Institutions
+  },
+  
+
 ]
+
+const router = createRouter({
+  history: createWebHashHistory(),
+  routes
+})
+
+export default router
