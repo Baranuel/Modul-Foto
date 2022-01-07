@@ -3,6 +3,15 @@ export default [
             id:1,
             name:"Rosenkruetz",
             date:"24/12/2021",
+            classPhotos:
+            [
+                {   
+                    name:"1* (30x50)",
+                    type:"classPhoto",
+                    headline:"class.jpg",
+                    price:0
+                }
+            ],
             photos:
                   [
                      {
@@ -13,6 +22,7 @@ export default [
                                 {
                                     name:"2022 Standard package",
                                     url:"girl-heart-2022-standard.jpg",
+                                    type:"bundle",
                                     description:
                                                 [
                                                 "1* (18x25)",
@@ -25,6 +35,7 @@ export default [
                                 {
                                     name:"2022 Large package",
                                     url:"girl-heart-2022-Large.jpg",
+                                    type:"bundle",
                                     description:
                                                 [
                                                 "1* (18x25)",
@@ -35,14 +46,6 @@ export default [
                                                 "12* (3x4)"
                                                 ],
                                     price:299
-                                }
-                            ],
-                    classPhotos:
-                            [
-                                {   
-                                    name:"1* (30x50)",
-                                    url:"class.jpg",
-                                    price:0
                                 }
                             ],
                     singles:
@@ -95,14 +98,6 @@ export default [
                                                 "12* (3x4)"
                                                 ],
                                     price:299
-                                }
-                            ],
-                    classPhotos:
-                            [
-                                {   
-                                    name:"1* (30x50)",
-                                    url:"class.jpg",
-                                    price:0
                                 }
                             ],
                     singles:
@@ -157,14 +152,6 @@ export default [
                                     price:299
                                 }
                             ],
-                    classPhotos:
-                            [
-                                {   
-                                    name:"1* (30x50)",
-                                    url:"class.jpg",
-                                    price:0
-                                }
-                            ],
                     singles:
                             [
                                 {
@@ -192,6 +179,7 @@ export default [
             id:2,
             name:"Guildenstern",
             date:"22/12/2021",
+            classPhotos:[],
             photos:
                   [
                      {
@@ -224,14 +212,6 @@ export default [
                                                 "12* (3x4)"
                                                 ],
                                     price:299
-                                }
-                            ],
-                    classPhotos:
-                            [
-                                {   
-                                    name:"1* (30x50)",
-                                    url:"class.jpg",
-                                    price:0
                                 }
                             ],
                     singles:
@@ -286,14 +266,6 @@ export default [
                                     price:299
                                 }
                             ],
-                    classPhotos:
-                            [
-                                {   
-                                    name:"1* (30x50)",
-                                    url:"class.jpg",
-                                    price:0
-                                }
-                            ],
                     singles:
                             [
                                 {
@@ -346,14 +318,7 @@ export default [
                                     price:299
                                 }
                             ],
-                    classPhotos:
-                            [
-                                {   
-                                    name:"1* (30x50)",
-                                    url:"class.jpg",
-                                    price:0
-                                }
-                            ],
+
                     singles:
                             [
                                 {

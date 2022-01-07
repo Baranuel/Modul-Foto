@@ -1,5 +1,5 @@
 <template>
-        <div   class=" w-9/12 mx-auto px-8 my-4  bg-red-100 flex ">
+        <div   class=" w-9/12 mx-auto px-8 my-4 bg-white shadow-xl flex ">
             <div class="w-1/3 flex">
         <img class=" self-center h-5/6 w-full " :src="`./assets/` + bundle.url" />
             </div>
@@ -55,7 +55,6 @@ export default {
     methods:{
         changeBundle(){
             this.bundle = this.bundles.find(bundle => bundle.name === this.selectedBundle)
-            console.log(this.bundles)
         }
     },
     beforeMount(){

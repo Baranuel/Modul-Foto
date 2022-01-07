@@ -16,6 +16,15 @@
             </div>
             <Bundle :specificProduct="specificProduct" :selectedBundle="selectedBundle"/>
         </div>
+        <Divide/>
+        <div>
+          <h1 class="font-maitree text-4xl p-2">Singles</h1>
+        <div class=" flex flex-row justify-center ">
+            <div class="" v-for="single, i in singles" :key="i">
+                <Single :single="single"/>
+            </div>
+        </div>
+        </div>
   </div>
 </template>
 
@@ -24,11 +33,13 @@ import data from '../data/products'
 import User from '../components/User.vue'
 import Divide from '../components/Divide.vue'
 import Bundle from '../components/Bundle.vue'
+import Single from '../components/Single.vue'
 export default {
     name:"Product",
     components:{ User,
                 Divide,
-                Bundle
+                Bundle,
+                Single
     }, 
     data(){
         return{
@@ -36,6 +47,7 @@ export default {
             photos:[],
             currentProduct:{},
             currentUser:"",
+            singles:[],
             bundles:[], 
             selectedBundle:"2022 Standard package",
             shown:false
@@ -59,9 +71,10 @@ export default {
         this.photos = this.currentUser.photos
         this.currentProduct = this.specificProduct
         this.bundles = this.currentProduct.bundles
+        this.singles = this.specificProduct.singles
 
 
-        console.log(this.bundles)
+        console.log(this.singles)
 
     }
 

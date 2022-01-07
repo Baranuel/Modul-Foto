@@ -10,8 +10,42 @@
             <Picture :picture="picture"/>
             </router-link>
         </div>
+
+        
       </div>
   </div>
+        <Divide/>
+        
+        <div v-show="classPhotos">
+        <div  class="text-left w-full flex">
+            <h1 v-if="classPhotos" class=" font-maitree text-4xl p-4">Class photos</h1>
+        </div>
+            <div class="grid  w-9/12 xl:grid-cols-2 md:grid-cols-3 sm:grid-cols-2 mx-auto  grid-rows-auto gap-4 gap-y-6 m-6" >
+      <div v-for="photo,i in classPhotos" :key="i"
+        class="  bg-gray-400 justify-self-center "
+        >
+        <div class=" bg-white p-8 flex flex-col">
+            <img :src="`./assets/` + photo.headline " alt="">
+            <div class>
+                <h1 class="p-4"> <strong>{{photo.name}}</strong></h1>
+                <h3 class="px-4">view Picture</h3>
+                <div class="flex flex-row justify-between p-4 mt-4" >
+                <div >
+                    <h1 class="text-2xl">Price</h1>
+                    <h1 class="text-2xl" >{{photo.price}}Kr.</h1>
+                </div>
+                <div>
+                    <h1>quiantity</h1>
+                    <button>Buy</button>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        
+      </div>
+  </div>
+        </div>
 </div>
 </template>
 
@@ -19,29 +53,38 @@
 
 
 import Picture from './Picture.vue'
+import Divide from './Divide.vue'
 
 
 export default {
     name:'Products',
     props:["user"],
     components:{
-        Picture
+        Picture,
+        Divide
     },
     data(){
         return{
 
-            photos:[]
+            photos:[],
+            classPhotos:[]
         }
         
     },
     computed:{
         createPhotos(){
             return this.user.photos
-            
-        }
+        },
+        createClassPhotos(){
+
+                return this.user.classPhotos
+        },
+
     },
     beforeMount(){
         this.photos = this.createPhotos
+        this.classPhotos = this.createClassPhotos
+        console.log(this.classPhotos)
     }
 
 }
