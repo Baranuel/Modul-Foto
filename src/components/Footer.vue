@@ -1,6 +1,6 @@
 <template>
 <footer class="flex justify-center bg-red-100 py-16">
-    <div class="footerWrapper flex container mx-4 px-4 justify-between text-left items-center">
+    <div class="footerWrapper flex w-9/12 mx-auto justify-between text-left items-center">
         <div>
             <ul>
                 <li class="font-bold">Address</li>

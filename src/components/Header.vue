@@ -1,6 +1,7 @@
 <template>
-  <header role="banner" class="flex py-8 bg-red-100 justify-center text-xl font-quicksand" :class="{ indexNav: $route.name == 'Home' }">
-    <div class="contentWrapper flex justify-between items-center container mx-4 px-4" >
+  <header role="banner" class="flex py-8 bg-red-100 justify-center text-xl font-quicksand headerFixed" :class="{ indexNav: $route.name == 'Home' }">
+ 
+    <div class="contentWrapper flex justify-between items-center w-9/12 mx-auto" >
       <h1 class="font-rufina font-normal">modul foto</h1>
       <nav id="nav" role="navigation">
         <ul class="flex items-center justify-around">
@@ -9,17 +10,19 @@
           <li><router-link to="/studio">Studio</router-link></li>
           <li><router-link to="/Institutions">Institutions</router-link></li>
           <li id="headerLogin" class="px-2 py-1 bg-blue-100 rounded-sm">
-            <router-link to="/user">Login</router-link>
+          <router-link to="/user">Login</router-link>
+            <router-link to="/login">Login</router-link>
           </li>
         </ul>
       </nav>
     </div>
+ 
   </header>
 </template>
 
 <script>
 export default {
-
+  
 };
 </script>
 
@@ -29,21 +32,22 @@ export default {
 .indexNav{
   background-color: rgba(255, 0, 0, 0) !important;
   color: white !important;
+  font-weight: 400 !important;
 }
 
 li {
   margin-left: 3rem;
 }
 
-#nav a {
-  font-weight: 500;
-  padding-bottom: 3px;
-  padding: 0px 2px 3px 2px;
+header a {
+  padding: 0.1rem;
 }
 
 #nav a.router-link-exact-active {
   color: var(--main-red-color);
-  border-bottom: 1px solid var(--main-red-color);
+  font-weight: 400;
+  box-sizing: content-box;
+  border-bottom: var(--main-red-color) 1px solid;
 }
 
 #headerLogin{
@@ -51,7 +55,9 @@ li {
   background-color: red;
 }
 
-#nav a.router-link-exact-active #headerLogin{
-  color: blueviolet;
+.headerFixed{
+    position: fixed;
+    width: 100%;
+    z-index: 99;
 }
 </style>
