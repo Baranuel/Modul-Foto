@@ -2,8 +2,8 @@
 
 <div class="videoWrapper">
     <div class="texttest w-9/12 mx-auto font-quicksand">
-    <div class="textWidth">
-Photographs that create smiles and memories
+    <div class="textWidth lg:text-6xl sm:text-4xl">
+        Photographs that create smiles and memories
     </div>
     </div>
     <video autoplay muted loop>
@@ -23,8 +23,6 @@ export default {
 
 <style>
 
-
-
 video{
     height: 100vh !important;
     width: 100%;
@@ -43,8 +41,8 @@ video{
     color: white;
     position: absolute;
     top: 30%;
-    z-index: 99;
-    font-size: 46px;
+    z-index: 98;
+
     font-weight: 400;
 }
 
