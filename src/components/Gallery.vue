@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import image from "../assets/logo.png";
+/* import image from "../assets/logo.png";
 const Masonry = require('masonry-layout')
 
 
@@ -31,7 +31,7 @@ export default {
       imageTest: image,
     };
   },
-};
+}; */
 
 </script>
 
