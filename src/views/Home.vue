@@ -39,7 +39,7 @@
   </section>
 
     <Gallery/>
- 
+   <ReachOut/>
 </template>
 
 <script>
@@ -47,12 +47,14 @@
 
 import Video from "../components/VideoPlayer.vue";
 import Gallery from "../components/Gallery.vue";
+import ReachOut from "../components/ReachOut.vue";
 
 
 export default {
   components: {
     Video,
-    Gallery
+    Gallery,
+    ReachOut
   },
 };
 
