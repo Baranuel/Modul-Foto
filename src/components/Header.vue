@@ -31,7 +31,7 @@ export default {
 .indexNav{
   position:fixed !important;
   top:0;
-  background-color: rgba(255, 0, 0, 0) !important;
+  background-color: rgba(0, 0, 0, 0) !important;
   color: white !important;
   font-weight: 400 !important;
 }
