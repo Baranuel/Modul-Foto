@@ -12,7 +12,11 @@
 
 <script>
 
-
+import image from "../assets/logo.png";
+import totalImage from "../assets/galleryImages/schoolTotal.jpg";
+import portrait from "../assets/galleryImages/portrait.jpg";
+import posingGirl from "../assets/galleryImages/girl.png";
+import posingGuy from "../assets/galleryImages/posingGuy.jpg";
 
 export default {
   data() {
