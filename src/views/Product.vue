@@ -20,7 +20,7 @@
             <Bundle :specificProduct="specificProduct" :selectedBundle="selectedBundle"/>
         </div>
         <Divide/>
-        <div class="w-9/12 mx-auto mt-24 ">
+        <div class="w-9/12 mx-auto  ">
           <h1 class="font-maitree text-4xl p-2">Singles</h1>
         <div class=" flex flex-row flex-wrap  ">
             <div class=" mx-auto min-w-min" v-for="single, i in singles" :key="i">

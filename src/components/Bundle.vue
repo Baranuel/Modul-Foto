@@ -1,5 +1,5 @@
 <template>
-        <div   class="  mx-auto px-8 my-4 bg-white shadow-xl flex ">
+        <div   class="  mx-auto px-8 my-4 bg-white shadow-xl flex font-maitree ">
             <div class="w-1/3 flex">
         <img class=" self-center h-5/6 w-full " :src="`./assets/` + bundle.url" />
             </div>
@@ -12,8 +12,8 @@
             <div class="flex w-full justify-between">
                 <div class="px-8 self-end">
                     <h1>Price</h1>
-                    <h1>{{bundle.price}} Kr. </h1>
-                </div>
+                    <h1 class="text-2xl"><strong>{{bundle.price}} Kr.</strong> </h1>
+                </div> 
                 <div class="">
                     <h1>Quantity</h1>
                 <Button/>
