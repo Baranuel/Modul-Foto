@@ -1,17 +1,23 @@
 <template>
-  <div>
-      <h4>Reach out</h4>
-      <p>Let's create memories. Get in touch</p>
-      <a href="">Get in touch</a>
+  <div class="w-9/12 mx-auto text-center my-32">
+      <h4 class="headline-regular text-center">Reach out</h4>
+      <p class="paragraph-text text-center">Let's create memories. Get in touch</p>
+       <Divide/>
+      <a class="buttonRed" href="">Contact us</a>
   </div> 
 </template>
 
 <script>
-export default {
+import Divide from "../components/Divide.vue";
 
+export default {
+  components: {
+    Divide,
+  }
 }
 </script>
 
 <style>
+
 
 </style>

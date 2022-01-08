@@ -18,7 +18,7 @@ We are more than just a photographs, we try to become friends with everyone we m
 export default {
 name: 'Intro',
 props:
-['title']
+['title', 'subtitle']
 }
 </script>
 

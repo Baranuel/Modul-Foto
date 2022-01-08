@@ -1,51 +1,30 @@
 <template>
   <div class="gallery w-9/12 mx-auto">
-    <div class="container">
-      <div class="imageContainer col-span-1">
-        <img :src="imageTest" alt="" />
-      </div>
-   
-        <div class="grid">
-            <div class="gridItem"> <img :src="imageTest" alt="" /></div>
-             <div class="gridItem"> <img :src="imageTest" alt="" /></div>
-              <div class="gridItem"> <img :src="imageTest" alt="" /></div>
+        <div class="container grid-rows-3">
+            <div class="gridItem"> <img :src="totalImage" alt="" /></div>
+            <div class="gridItem md:row-span-2"> <img :src="portrait" alt="" /></div>
+            <div class="gridItem md:row-span-2"> <img :src="posingGirl" alt="" /></div>
+            <div class="gridItem md:row-span-2"> <img :src="posingGuy" alt="" /></div>
+            <div class="gridItem md:col-span-2"> <img :src="totalImage" alt="" /></div>
         </div>
-
-    </div>
   </div>
 </template>
 
 <script>
-import Masonry from 'masonry'
-import image from "../assets/logo.png"
-
-export default {
-
-  data() {
-    return {
-      imageTest: image,
-    };
-  },
-  beforeMount(){
-    console.log(Masonry)
-  }
-};
-/* import image from "../assets/logo.png";
-const Masonry = require('masonry-layout')
 
 
-window.onload = () =>{
-    const grid = document.querySelector('.grid')
-    const masonry = new Masonry(grid)
-}
 
 export default {
   data() {
     return {
       imageTest: image,
+      totalImage: totalImage,
+      portrait: portrait,
+      posingGirl: posingGirl,
+      posingGuy: posingGuy
     };
   },
-}; */
+}; 
 
 </script>
 
@@ -53,20 +32,23 @@ export default {
 
 .container{
     display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    grid-template-rows: 1fr 2fr;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr) );
+    grid-template-rows: repeat(3, 250px);
     grid-gap: 1rem;
     grid-auto-flow: dense;
-}
-
-.imageContainer{
-    height: 300px;
 }
 
 img{
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+
+@media only screen and (max-width: 800px) {
+  .container{
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: auto;
+  }
 }
 
 </style>
