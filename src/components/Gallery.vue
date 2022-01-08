@@ -5,7 +5,7 @@
             <div class="gridItem md:row-span-2"> <img :src="portrait" alt="" /></div>
             <div class="gridItem md:row-span-2"> <img :src="posingGirl" alt="" /></div>
             <div class="gridItem md:row-span-2"> <img :src="posingGuy" alt="" /></div>
-            <div class="gridItem md:col-span-2"> <img :src="totalImage" alt="" /></div>
+            <div class="gridItem sm:col-span-1 md:col-span-1 lg:col-span-1 xl:col-span-2"> <img :src="totalImage" alt="" /></div>
         </div>
   </div>
 </template>
@@ -37,7 +37,7 @@ export default {
 .container{
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr) );
-    grid-template-rows: repeat(3, 250px);
+    grid-template-rows: repeat(3, 180px);
     grid-gap: 1rem;
     grid-auto-flow: dense;
 }
