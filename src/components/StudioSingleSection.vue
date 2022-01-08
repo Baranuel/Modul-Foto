@@ -4,7 +4,7 @@
   <div class="flex gap-x-36">
 <div class="w-8/12">
   <h2 class="headline-regular mb-8">Need a passport photo?</h2>
-  <p class="border-l-2 border-red-500 py-2 px-6 paragraph-text">No appointment needed!
+  <p class="border-l-2 border-mainRed py-2 px-6 paragraph-text">No appointment needed!
 <br><br>
 Just come to the studio, bring your, best official looks, and we’ll be done before you know it,
 fully certiffied, free download
@@ -19,7 +19,7 @@ fully certiffied, free download
 <div class="flex gap-20">
 <div class="w-4/12">
   <h2 class="headline-regular mb-8">Studio Photos</h2>
-  <p class="border-l-2 border-red-500 py-2 px-6 paragraph-text">In the studio, we spend 45 minutes taking a series of beautiful photos of your little one. Your child can be quite small, so you are welcome from the time the child is born until the child is approx. half a year.
+  <p class="border-l-2 border-mainRed py-2 px-6 paragraph-text">In the studio, we spend 45 minutes taking a series of beautiful photos of your little one. Your child can be quite small, so you are welcome from the time the child is born until the child is approx. half a year.
    <br><br>
 We have different blankets to lie on, but feel free to bring your own private things, e.g. own blanket, car, ball or teddy bear.
 </p>

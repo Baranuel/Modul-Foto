@@ -3,6 +3,7 @@
               <div class="tabsTextContainer">
                 <h4 class="headline-regular">{{ title }}</h4>
                 <p class="paragraph-text">{{ description }}</p>
+                <slot></slot>
               </div>
               <div class="tabsImageContainer">
                   <img :src="require('../assets/tabsImages/' + filename)">
@@ -45,6 +46,7 @@ padding: 2rem 0 2rem 2rem;
   max-height: 500px;
   width: 100%;
   object-fit: cover;
+  max-width: 500px;
 
 }
 
