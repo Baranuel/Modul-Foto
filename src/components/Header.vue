@@ -1,5 +1,5 @@
 <template>
-  <header role="banner" class="flex py-8 bg-red-100 justify-center text-xl font-quicksand headerFixed" :class="{ indexNav: $route.name == 'Home', indexNavScroll:  scrollPosition > 50 & $route.name == 'Home', navScroll: scrollPosition > 50 }">
+  <header role="banner" class="flex py-6 bg-red-100 justify-center text-xl font-quicksand headerFixed" :class="{ indexNav: $route.name == 'Home', indexNavScroll:  scrollPosition > 50 & $route.name == 'Home', navScroll: scrollPosition > 50 }">
  
     <div class="contentWrapper flex justify-between items-center w-9/12 mx-auto" >
       <h1 class="font-rufina font-normal">modul foto</h1>
