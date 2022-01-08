@@ -5,6 +5,9 @@ import Product from '../views/Product.vue'
 import Studio from '../views/Studio.vue'
 import Login from '../views/Login.vue'
 import Institutions from '../views/Institutions.vue'
+import GDPR from '../views/GDPR.vue'
+import ToS from '../views/ToS.vue'
+import Contact from '../views/Contact.vue'
 
 // we are in the main
 const routes = [
@@ -46,13 +49,38 @@ const routes = [
     name: 'institutions',
     component:Institutions
   },
+  {
+    path: '/GDPR',
+    name: 'GDPR',
+    component:GDPR
+  },
+  {
+    path: '/ToS',
+    name: 'ToS',
+    component:ToS
+  },
+  {
+    path: '/Contact',
+    name: 'Contact',
+    component:Contact
+  },
+  
   
 
 ]
 
+
+
+
+
 const router = createRouter({
   history: createWebHashHistory(),
-  routes
+  routes,
+ scrollBehavior:()=> {
+    return { left:0, top:0 }
+  }
+
 })
+
 
 export default router

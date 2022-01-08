@@ -3,6 +3,15 @@ export default [
             id:1,
             name:"Rosenkruetz",
             date:"24/12/2021",
+            classPhotos:
+            [
+                {   
+                    name:"1* (30x50)",
+                    type:"classPhoto",
+                    headline:"class.jpg",
+                    price:0
+                }
+            ],
             photos:
                   [
                      {
@@ -13,6 +22,7 @@ export default [
                                 {
                                     name:"2022 Standard package",
                                     url:"girl-heart-2022-standard.jpg",
+                                    type:"bundle",
                                     description:
                                                 [
                                                 "1* (18x25)",
@@ -25,6 +35,7 @@ export default [
                                 {
                                     name:"2022 Large package",
                                     url:"girl-heart-2022-Large.jpg",
+                                    type:"bundle",
                                     description:
                                                 [
                                                 "1* (18x25)",
@@ -37,16 +48,18 @@ export default [
                                     price:299
                                 }
                             ],
-                    classPhotos:
-                            [
-                                {   
-                                    name:"1* (30x50)",
-                                    url:"class.jpg",
-                                    price:0
-                                }
-                            ],
                     singles:
                             [
+                                {
+                                    name:"1* (18x25)",
+                                    url:"girl-heart-18x25.jpg",
+                                    price:123
+                                },
+                                {
+                                    name:"1* (18x25)",
+                                    url:"girl-heart-18x25.jpg",
+                                    price:123
+                                },
                                 {
                                     name:"1* (18x25)",
                                     url:"girl-heart-18x25.jpg",
@@ -72,7 +85,7 @@ export default [
                             [
                                 {
                                     name:"2022 Standard package",
-                                    url:"girl-heart-2022-standard.jpg",
+                                    url:"girl-baw-bundle.jpg",
                                     description:
                                                 [
                                                 "1* (18x25)",
@@ -84,7 +97,7 @@ export default [
                                 
                                 {
                                     name:"2022 Large package",
-                                    url:"girl-heart-2022-Large.jpg",
+                                    url:"girl-baw-bundle-large.jpg",
                                     description:
                                                 [
                                                 "1* (18x25)",
@@ -97,29 +110,21 @@ export default [
                                     price:299
                                 }
                             ],
-                    classPhotos:
-                            [
-                                {   
-                                    name:"1* (30x50)",
-                                    url:"class.jpg",
-                                    price:0
-                                }
-                            ],
                     singles:
                             [
                                 {
                                     name:"1* (18x25)",
-                                    url:"girl-baw-18x25.jpg",
-                                    price:123
+                                    url:"girl-baw.jpg",
+                                    price:143
                                 },
                                 {
                                     name:"2* (13x18)",
-                                    url:"girl-baw-13x18.jpg",
+                                    url:"girl-baw.jpg",
                                     price:123
                                 },
                                 {
                                     name:"28* (3x4)",
-                                    url:"girl-baw-3x4.jpg",
+                                    url:"girl-baw.jpg",
                                     price:123
                                 },
                             ]
@@ -157,14 +162,6 @@ export default [
                                     price:299
                                 }
                             ],
-                    classPhotos:
-                            [
-                                {   
-                                    name:"1* (30x50)",
-                                    url:"class.jpg",
-                                    price:0
-                                }
-                            ],
                     singles:
                             [
                                 {
@@ -185,6 +182,60 @@ export default [
                             ]
                     
                         },
+                        {
+                            pictureId:4,
+                            headline:"girl-baw-heart.jpg",
+                            bundles:
+                                    [
+                                        {
+                                            name:"2022 Standard package",
+                                            url:"girl-baw-heart-bundle.jpg",
+                                            type:"bundle",
+                                            description:
+                                                        [
+                                                        "1* (18x25)",
+                                                        "3* (13x18)",
+                                                        "2* (9x12)"
+                                                        ],
+                                            price:299
+                                        },
+                                        {
+                                            name:"2022 Large package",
+                                            url:"girl-baw-heart-bundle-large.jpg",
+                                            type:"bundle",
+                                            description:
+                                                        [
+                                                        "1* (18x25)",
+                                                        "2* (13x18)",
+                                                        "2* (9x12)",
+                                                        "4* (6x9)",
+                                                        "4* (4x6)",
+                                                        "12* (3x4)"
+                                                        ],
+                                            price:335
+                                        }
+                                    ],
+                            singles:
+                                    [
+                                        
+                                        {
+                                            name:"1* (18x25)",
+                                            url:"girl-baw-heart-18x25.jpg",
+                                            price:123
+                                        },
+                                        {
+                                            name:"2* (13x18)",
+                                            url:"girl-baw-heart-13x18.jpg",
+                                            price:123
+                                        },
+                                        {
+                                            name:"28* (3x4)",
+                                            url:"girl-baw-heart-3x4.jpg",
+                                            price:123
+                                        },
+                                    ]
+                            
+                                },
                     ],
 
         },
@@ -192,16 +243,17 @@ export default [
             id:2,
             name:"Guildenstern",
             date:"22/12/2021",
+            classPhotos:[],
             photos:
                   [
                      {
                     pictureId:1,
-                    headline:"girl-baw.jpg",
+                    headline:"dog.jpg",
                     bundles:
                             [
                                 {
                                     name:"2022 Standard package",
-                                    url:"girl-heart-2022-standard.jpg",
+                                    url:"dog.jpg",
                                     description:
                                                 [
                                                 "1* (18x25)",
@@ -213,7 +265,7 @@ export default [
                                 
                                 {
                                     name:"2022 Large package",
-                                    url:"girl-heart-2022-Large.jpg",
+                                    url:"dog.jpg",
                                     description:
                                                 [
                                                 "1* (18x25)",
@@ -226,29 +278,21 @@ export default [
                                     price:299
                                 }
                             ],
-                    classPhotos:
-                            [
-                                {   
-                                    name:"1* (30x50)",
-                                    url:"class.jpg",
-                                    price:0
-                                }
-                            ],
                     singles:
                             [
                                 {
                                     name:"1* (18x25)",
-                                    url:"girl-heart-18x25.jpg",
+                                    url:"dog.jpg",
                                     price:123
                                 },
                                 {
                                     name:"2* (13x18)",
-                                    url:"girl-heart-13x18.jpg",
+                                    url:"dog.jpg",
                                     price:123
                                 },
                                 {
                                     name:"28* (3x4)",
-                                    url:"girl-heart-3x4.jpg",
+                                    url:"dog.jpg",
                                     price:123
                                 },
                             ]
@@ -256,12 +300,12 @@ export default [
                         },
                          {
                     pictureId:2,
-                    headline:"girl-baw.jpg",
+                    headline:"family.jpg",
                     bundles:
                             [
                                 {
                                     name:"2022 Standard package",
-                                    url:"girl-heart-2022-standard.jpg",
+                                    url:"family.jpg",
                                     description:
                                                 [
                                                 "1* (18x25)",
@@ -273,7 +317,7 @@ export default [
                                 
                                 {
                                     name:"2022 Large package",
-                                    url:"girl-heart-2022-Large.jpg",
+                                    url:"family.jpg",
                                     description:
                                                 [
                                                 "1* (18x25)",
@@ -286,29 +330,21 @@ export default [
                                     price:299
                                 }
                             ],
-                    classPhotos:
-                            [
-                                {   
-                                    name:"1* (30x50)",
-                                    url:"class.jpg",
-                                    price:0
-                                }
-                            ],
                     singles:
                             [
                                 {
                                     name:"1* (18x25)",
-                                    url:"girl-baw-18x25.jpg",
+                                    url:"family.jpg",
                                     price:123
                                 },
                                 {
                                     name:"2* (13x18)",
-                                    url:"girl-baw-13x18.jpg",
+                                    url:"family.jpg",
                                     price:123
                                 },
                                 {
                                     name:"28* (3x4)",
-                                    url:"girl-baw-3x4.jpg",
+                                    url:"family.jpg",
                                     price:123
                                 },
                             ]
@@ -346,14 +382,7 @@ export default [
                                     price:299
                                 }
                             ],
-                    classPhotos:
-                            [
-                                {   
-                                    name:"1* (30x50)",
-                                    url:"class.jpg",
-                                    price:0
-                                }
-                            ],
+
                     singles:
                             [
                                 {
