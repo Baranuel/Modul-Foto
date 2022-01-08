@@ -1,5 +1,5 @@
 <template>
-  <header role="banner" class="flex py-6 mainRed justify-center text-xl font-quicksand headerFixed" :class="{ indexNav: $route.name == 'Home', indexNavScroll:  scrollPosition > 50 & $route.name == 'Home', navScroll: scrollPosition > 50 }">
+  <header role="banner" class="flex py-6 mainWhite justify-center text-xl font-quicksand headerFixed" :class="{ indexNav: $route.name == 'Home', indexNavScroll:  scrollPosition > 50 & $route.name == 'Home', navScroll: scrollPosition > 50 }">
  
     <div class="contentWrapper flex justify-between items-center w-9/12 mx-auto" >
       <h1 class="font-rufina font-normal">modul foto</h1>
@@ -10,7 +10,15 @@
           <li><router-link to="/studio">Studio</router-link></li>
           <li><router-link to="/Institutions">Institutions</router-link></li>
           <li><router-link to="/Contact">Contact</router-link></li>
-          <li @click="togglePages">Policy</li>
+          <li>
+            <button @click="togglePages" aria-expanded="false">Policy</button>
+            <ul class="dropdownMenu" aria-hidden="true" :class="{ dropdownMenuBackground: $route.name == 'Home', displayNone: visible == true ,indexNavScroll:  scrollPosition > 50 & $route.name == 'Home', navScroll: scrollPosition > 50 }">
+              <li>Content</li>
+              <li>Content2</li>
+            </ul>
+          </li>
+          
+
           <li id="headerLogin" class="px-2 py-1 bg-blue-100 rounded-sm">
             <router-link to="/login">Login</router-link>
           </li>
@@ -25,14 +33,15 @@
 
 export default {
     data() {
-    return { scrollPosition: null }
+    return { scrollPosition: null,
+    visible: true }
   },
   methods: {
         updateScroll() {
        this.scrollPosition = window.scrollY
     },
-    showPages(){
-      document.querySelector('.')
+    togglePages(){
+      this.visible = !this.visible
     }
   },
   mounted() {
@@ -42,6 +51,25 @@ export default {
 </script>
 
 <style scoped>
+
+.dropdownMenu{
+  background-color: rgb(0, 0, 0);
+  padding: 0rem 0;
+  position: absolute;
+}
+
+
+.dropdownMenu li{
+  margin: 1rem 0;
+}
+
+.dropdownMenuBackground {
+  background-color: rgba(29, 29, 29, 0)
+}
+
+.displayNone{
+  display: none;
+}
 
 header{
   transition: background-color 0.3s linear, padding 0.4s ease-in-out;
@@ -53,7 +81,7 @@ header{
   background-color: rgba(0, 0, 0, 0) !important;
   color: white !important;
   font-weight: 400 !important;
-  
+
 }
 
 .indexNavScroll{
