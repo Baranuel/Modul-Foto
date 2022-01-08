@@ -9,6 +9,7 @@
           <li><router-link to="/about">About</router-link></li>
           <li><router-link to="/studio">Studio</router-link></li>
           <li><router-link to="/Institutions">Institutions</router-link></li>
+          <li><router-link to="/Contact">Contact</router-link></li>
           <li>Policy</li>
           <li id="headerLogin" class="px-2 py-1 bg-blue-100 rounded-sm">
             <router-link to="/login">Login</router-link>
@@ -41,6 +42,7 @@ export default {
 
 header{
   transition: background-color 0.3s linear, padding 0.4s ease-in-out;
+
 }
 
 .indexNav{
@@ -83,7 +85,7 @@ header a {
 }
 
 .headerFixed{
-    position: sticky;
+    position: fixed;
     top:0;
     width: 100%;
     z-index: 99;

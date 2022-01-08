@@ -1,4 +1,5 @@
 <template>
+<Margintop/>
   <h2 class="headline-large w-9/12 mx-auto">Contact information</h2>
   <div class="w-9/12 mx-auto grid grid-cols-3 gap-y-20 gap-x-20 mb-5">
         <div class="flex-inline">
@@ -37,7 +38,11 @@ Simply take the elevator to the 6th floor.
 </template>
 
 <script>
+import Margintop from '../components/margintop.vue'
 export default {
+        components:{
+                Margintop
+        }
 
 }
 </script>
