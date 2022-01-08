@@ -3,7 +3,7 @@
         <h1 class="self-start font-maitree text-4xl p-4">Your Pictures</h1>
   <div class="grid  w-9/12 xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-2  grid-rows-auto gap-4 gap-y-6 m-6" >
       <div v-for="picture in photos" :key="picture.pictureId"
-        class="  bg-gray-400 justify-self-center shadow-xl customShadow"
+        class="  bg-black justify-self-center shadow-xl customShadow"
         >
         <div class=" ">
             <router-link :to="`${user.name}/product/${picture.pictureId}`">
@@ -18,7 +18,7 @@
 
         <div v-show="classPhotos">
         <div  class="text-left w-full flex">
-            <h1 v-if="classPhotos" class=" font-maitree text-4xl p-4">Class photos</h1>
+            <h1 v-show="empty" class=" font-maitree text-4xl p-4">Class photos</h1>
         </div>
             <div class="grid  w-9/12 xl:grid-cols-2 md:grid-cols-3 sm:grid-cols-2 mx-auto  grid-rows-auto gap-4 gap-y-6 m-6" >
       <div v-for="photo,i in classPhotos" :key="i"
@@ -68,7 +68,8 @@ export default {
         return{
 
             photos:[],
-            classPhotos:[]
+            classPhotos:[],
+            empty:true
         }
         
     },
@@ -80,7 +81,7 @@ export default {
 
                 return this.user.classPhotos
         },
-
+        
     },
     beforeMount(){
         this.photos = this.createPhotos

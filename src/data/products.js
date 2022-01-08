@@ -248,12 +248,12 @@ export default [
                   [
                      {
                     pictureId:1,
-                    headline:"girl-baw.jpg",
+                    headline:"dog.jpg",
                     bundles:
                             [
                                 {
                                     name:"2022 Standard package",
-                                    url:"girl-heart-2022-standard.jpg",
+                                    url:"dog.jpg",
                                     description:
                                                 [
                                                 "1* (18x25)",
@@ -265,7 +265,7 @@ export default [
                                 
                                 {
                                     name:"2022 Large package",
-                                    url:"girl-heart-2022-Large.jpg",
+                                    url:"dog.jpg",
                                     description:
                                                 [
                                                 "1* (18x25)",
@@ -282,17 +282,17 @@ export default [
                             [
                                 {
                                     name:"1* (18x25)",
-                                    url:"girl-heart-18x25.jpg",
+                                    url:"dog.jpg",
                                     price:123
                                 },
                                 {
                                     name:"2* (13x18)",
-                                    url:"girl-heart-13x18.jpg",
+                                    url:"dog.jpg",
                                     price:123
                                 },
                                 {
                                     name:"28* (3x4)",
-                                    url:"girl-heart-3x4.jpg",
+                                    url:"dog.jpg",
                                     price:123
                                 },
                             ]
@@ -300,12 +300,12 @@ export default [
                         },
                          {
                     pictureId:2,
-                    headline:"girl-baw.jpg",
+                    headline:"family.jpg",
                     bundles:
                             [
                                 {
                                     name:"2022 Standard package",
-                                    url:"girl-heart-2022-standard.jpg",
+                                    url:"family.jpg",
                                     description:
                                                 [
                                                 "1* (18x25)",
@@ -317,7 +317,7 @@ export default [
                                 
                                 {
                                     name:"2022 Large package",
-                                    url:"girl-heart-2022-Large.jpg",
+                                    url:"family.jpg",
                                     description:
                                                 [
                                                 "1* (18x25)",
@@ -334,17 +334,17 @@ export default [
                             [
                                 {
                                     name:"1* (18x25)",
-                                    url:"girl-baw.jpg",
+                                    url:"family.jpg",
                                     price:123
                                 },
                                 {
                                     name:"2* (13x18)",
-                                    url:"girl-baw.jpg",
+                                    url:"family.jpg",
                                     price:123
                                 },
                                 {
                                     name:"28* (3x4)",
-                                    url:"girl-baw.jpg",
+                                    url:"family.jpg",
                                     price:123
                                 },
                             ]

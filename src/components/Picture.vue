@@ -1,7 +1,6 @@
 <template>
         <div>
-              <img :src="'./assets/' + picture.headline" alt="" class=" h-full w-full object-fill object-center">
-
+              <img :src="'./assets/' + picture.headline" alt="" class=" object-contain object-center">
         </div>
 </template>
 
