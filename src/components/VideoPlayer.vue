@@ -2,7 +2,7 @@
 
 <div class="videoWrapper">
     <div class="texttest w-9/12 mx-auto font-quicksand">
-    <div class="textWidth lg:text-6xl sm:text-4xl">
+    <div class="textWidth lg:text-6xl sm:text-2xl md:text-6xl xl:text-6xl">
         Photographs that create smiles and memories
     </div>
     </div>
