@@ -28,16 +28,29 @@ export default {
 }
 
 .tabsTextContainer{
-  width: 30%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 40%;
+  height: 300px;
   border-right: red 1px solid;
 }
 
 .tabsImageContainer{
-  width: 60%
+ width: 60%;
+padding: 2rem 0 2rem 2rem;
 }
 
+.tabsImageContainer img {
+  max-height: 500px;
+  width: 100%;
+  object-fit: cover;
+
+}
 
 .tabs-component-tab-a {
+  font-family: "Lora", serif;
+  font-size: 20px;
   margin-right: 2rem;
 }
 .tabs-component{
@@ -50,13 +63,31 @@ export default {
 }
 
 .is-active a{
-  border-bottom: rgb(255, 40, 40) solid 1px;
+  border-bottom: var(--main-red-color) solid 1px;
+  color: var(--main-red-color);
 }
 
 .tabs-component-tabs a {
   padding-bottom: 0.2em;
 }
 
+@media only screen and (max-width: 900px) {
 
+.flexContainer{
+  flex-direction: column;
+}
+.tabsTextContainer{
+ border-bottom: red 1px solid;
+ border-right: none;
+ width: 100%;
+}
+.tabsImageContainer{
+ width: 100%;
+padding: 0;
+}
+
+
+
+}
 
 </style>

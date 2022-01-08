@@ -42,7 +42,7 @@
    <ReachOut/>
 
 <section class="bg-red-100">
-   <tabs class="w-9/12 mx-auto" :options="{ useUrlFragment: false }">
+   <tabs class="w-8/12 mx-auto" :options="{ useUrlFragment: false }">
        
         <tab name="School portraits">
             <Tabz title="School portraits" description="A picture of the entire class!"  filename="girl.png" />
@@ -55,7 +55,9 @@
           <tab name="Full school photo">
             <Tabz title="Class photos" description="Its HELL FUN" filename="girl.png"   />
         </tab>
-    
+           <tab name="Test">
+            <Tabz title="Big image" description="Funny" filename="girl.png"   />
+        </tab>
     </tabs>
 </section>
 
