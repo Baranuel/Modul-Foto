@@ -10,8 +10,8 @@ We are more than just a photographs, we try to become friends with everyone we m
 <div class="w-9/12 mx-auto mt-36 mb-4">
 <i class="fas fa-camera-retro fa-2x text-mainRed"><h3 class="headline-process text-left inline ml-4 font-medium">We Offer</h3></i>
 </div>
-<section class="grey-section">
-   <tabs class="w-8/12 mx-auto" :options="{ useUrlFragment: false }">
+<section class="grey-section w-12/12">
+   <tabs class="w-6/12 mx-auto" :options="{ useUrlFragment: false }">
        
         <tab name="Class photo">
             <Tabz title="Class photo" filename="Classphoto.jpg" ><p class="paragraph-text">A photo of you entire class with your favourite teacher</p></Tabz>     
@@ -45,8 +45,8 @@ The student book contains all the school's class pictures with the names of all 
 <div class="w-9/12 mx-auto mt-36 mb-4">
 <i class="fas fa-camera-retro fa-2x text-mainRed"><h3 class="headline-process text-left inline ml-4 font-medium">We Offer</h3></i>
 </div>
-<section class="grey-section">
-   <tabs class="w-8/12 mx-auto" :options="{ useUrlFragment: false }">
+<section class="grey-section w-12/12 mx-auto">
+   <tabs class="w-6/12 mx-auto" :options="{ useUrlFragment: false }">
        
         <tab name="Living pictures">
             <Tabz title="Living room picture" filename="hello1.jpg" ><p class="paragraph-text">
@@ -84,8 +84,10 @@ Therefore, we always try to take your living room photos outdoors, weather permi
 <div class="w-9/12 mx-auto mt-36 mb-4">
 <i class="fas fa-camera-retro fa-2x text-mainRed"><h3 class="headline-process text-left inline ml-4 font-medium">We Offer</h3></i>
 </div>
-<section class="grey-section">
-   <tabs class="w-8/12 mx-auto" :options="{ useUrlFragment: false }">
+
+
+<section class="grey-section w-12/12 mx-auto">
+   <tabs class="w-6/12 mx-auto" :options="{ useUrlFragment: false }">
        
         <tab name="Staff portraits">
             <Tabz title="Staff portraits" filename="faculty1.jpg" ><p class="paragraph-text">

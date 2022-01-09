@@ -1,7 +1,7 @@
 <template>
     <div  class="h-64 bg-gray-100 w-9/12 mx-auto my-16 mt-8 text-left">
     <User :user="currentUser"/>
-    <router-link :to="`/user/${currentUser.id}`" class="text-mainRed p-4"> choose different image</router-link>
+    <router-link :to="`/user/${currentUser.id}`" class="text-mainRed p-4 hover:bg-hvrRed"> choose different image</router-link>
     </div>
     <Divide/>
   <div class=" w-9/12 mb-24 mx-auto py-0 ">
