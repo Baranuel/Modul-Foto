@@ -65,9 +65,6 @@ export default {
 
 <style scoped>
 
-#middle{
-  scroll-margin: 80px;
-}
 
 .controllablePadding{
   padding: 2rem clamp(2rem, 5.5vw, 10rem); 
