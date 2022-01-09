@@ -46,6 +46,7 @@ img{
     height: 100%;
     width: 100%;
     object-fit: cover;
+    max-height: 400px;
 }
 
 @media only screen and (max-width: 800px) {

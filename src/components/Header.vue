@@ -9,12 +9,13 @@
           <li><router-link to="/about">About</router-link></li>
           <li><router-link to="/studio">Studio</router-link></li>
           <li><router-link to="/Institutions">Institutions</router-link></li>
+      
           <li><router-link to="/Contact">Contact</router-link></li>
-          <li>
-            <button @click="togglePages" aria-expanded="false">Policy</button>
-            <ul class="dropdownMenu" aria-hidden="true" :class="{ dropdownMenuBackground: $route.name == 'Home', displayNone: visible == true ,indexNavScroll:  scrollPosition > 50 & $route.name == 'Home', navScroll: scrollPosition > 50 }">
-              <li>Content</li>
-              <li>Content2</li>
+          <li class="">
+          <button @click="togglePages" aria-expanded="false">Policy   <i class="fas fa-arrow-down text-base"></i> </button>
+            <ul class="dropdownMenu mainWhite" aria-hidden="true" :class="{ dropdownMenuBackground: $route.name == 'Home', displayNone: visible == true ,indexNavScroll: scrollPosition > 50 & $route.name == 'Home' }">
+              <li><router-link to="/Gdpr">GDPR</router-link></li>
+              <li><router-link to="/TOS">TOS</router-link></li>
             </ul>
           </li>
           
@@ -53,14 +54,13 @@ export default {
 <style scoped>
 
 .dropdownMenu{
-  background-color: rgb(0, 0, 0);
   padding: 0rem 0;
   position: absolute;
+  margin: 0 -1rem;
 }
 
-
 .dropdownMenu li{
-  margin: 1rem 0;
+  margin: 1rem;
 }
 
 .dropdownMenuBackground {
@@ -75,18 +75,20 @@ header{
   transition: background-color 0.3s linear, padding 0.4s ease-in-out;
 }
 
+.dropdownMenu{
+    transition: background-color 0.3s linear, padding 0.4s ease-in-out;
+}
+
 .indexNav{
   position:fixed !important;
   top:0;
   background-color: rgba(0, 0, 0, 0) !important;
   color: white !important;
   font-weight: 400 !important;
-
 }
 
 .indexNavScroll{
   background-color: rgb(29, 29, 29) !important;
-  padding: 1rem 0;
 }
 
 .navScroll{

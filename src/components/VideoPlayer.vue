@@ -7,7 +7,7 @@
     </div>
     </div>
     <div class="arrowWrap w-100">
-    <img  src="../assets/up-arrow.png" alt="">
+    <img @click="scrollToContent" src="../assets/up-arrow.png" alt="">
     </div>
     <video autoplay muted loop>
       <source :src="mp4" type="video/mp4">
@@ -20,6 +20,11 @@ export default {
   name: "Video",
   props: {
     mp4: String
+  },
+  methods: {
+    scrollToContent() {
+      document.querySelector('#middle').scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+    }
   }
 }
 </script>

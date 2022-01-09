@@ -1,8 +1,8 @@
 <template>
   <Video :mp4="require(`../assets/modulFoto1080v2.mp4`)" />
  
-  <section class="w-9/12 mx-auto">
-    <h1 class="headline-large text-center">What we do</h1>
+  <section id="middle" class="w-9/12 mx-auto scroll-mt-8">
+    <h1  class="headline-large text-center">What we do</h1>
     <p class="paragraph-text text-center">
       We create memories which will last forever.
     </p>
@@ -32,7 +32,7 @@
   </section >
   
   <section class="w-9/12 mx-auto">
-  <h3 class="headline-large text-center">Our work</h3>
+  <h3  class="headline-large text-center">Our work</h3>
     <p class="paragraph-text text-center my-16">
       We want to help you create unforgettable moments and share them with the world
     </p>
@@ -40,26 +40,6 @@
 
     <Gallery/>
    <ReachOut/>
-
-<section class="bg-red-100">
-   <tabs class="w-8/12 mx-auto" :options="{ useUrlFragment: false }">
-       
-        <tab name="School portraits">
-            <Tabz title="School portraits" description="A picture of the entire class!"  filename="girl.png" />
-        </tab>
-  
-        <tab name="Class photos">
-            <Tabz title="Class photos" description="Its HELL FUN" filename="girl.png"   />
-        </tab>
-
-          <tab name="Full school photo">
-            <Tabz title="Class photos" description="Its HELL FUN" filename="girl.png"   />
-        </tab>
-           <tab name="Test">
-            <Tabz title="Big image" description="Funny" filename="girl.png"   />
-        </tab>
-    </tabs>
-</section>
 
 
 </template>
@@ -71,20 +51,23 @@
 import Video from "../components/VideoPlayer.vue";
 import Gallery from "../components/Gallery.vue";
 import ReachOut from "../components/ReachOut.vue";
-import Tabz from "../components/Tabz.vue"
+
 
 export default {
   components: {
     Video,
     Gallery,
     ReachOut,
-    Tabz,
   },
 };
 
 </script>
 
 <style scoped>
+
+#middle{
+  scroll-margin: 80px;
+}
 
 .controllablePadding{
   padding: 2rem clamp(2rem, 5.5vw, 10rem); 
