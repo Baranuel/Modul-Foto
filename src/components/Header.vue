@@ -97,7 +97,7 @@ header{
 
 
 li {
-  margin-left: 3rem;
+  margin-left: clamp(2rem, 3vw, 3rem); ;
 }
 
 header a {

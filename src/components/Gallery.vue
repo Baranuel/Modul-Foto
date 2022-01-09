@@ -1,12 +1,15 @@
 <template>
   <div class="gallery w-9/12 mx-auto">
         <div class="container grid-rows-3">
-            <div class="gridItem"> <img :src="totalImage" alt="" /></div>
-            <div class="gridItem md:row-span-2"> <img :src="portrait" alt="" /></div>
-            <div class="gridItem md:row-span-2"> <img :src="posingGirl" alt="" /></div>
+            <div class="gridItem"> <img :src="girlPortrait" alt="Portrait of a girl" /></div>
+            <div class="gridItem md:row-span-2"> <img :src="portrait" alt="Portrait of a guy" /></div>
+            <div class="gridItem md:row-span-2"> <img :src="posingGirl" alt="Girl posing on a bench" /></div>
             <div class="gridItem md:row-span-2"> <img :src="posingGuy" alt="" /></div>
-            <div class="gridItem sm:col-span-1 md:col-span-1 lg:col-span-1 xl:col-span-2"> <img :src="totalImage" alt="" /></div>
+            <div class="gridItem sm:col-span-1 md:col-span-1 lg:col-span-1 xl:col-span-2"> <img :src="totalImage" alt="Photographer taking image of entire school" /></div>
         </div>
+  </div>
+  <div class="w-9/12 mx-auto py-6" >
+  <a class="float-right paragraph-text text-mainRed" href="https://www.instagram.com/modulfoto/">See all of our photos</a>
   </div>
 </template>
 
@@ -17,6 +20,7 @@ import totalImage from "../assets/galleryImages/schoolTotal.jpg";
 import portrait from "../assets/galleryImages/portrait.jpg";
 import posingGirl from "../assets/galleryImages/girl.png";
 import posingGuy from "../assets/galleryImages/posingGuy.jpg";
+import girlPortrait from "../assets/galleryImages/264968279_617805469368625_215291372559676243_n.jpg";
 
 export default {
   data() {
@@ -25,7 +29,8 @@ export default {
       totalImage: totalImage,
       portrait: portrait,
       posingGirl: posingGirl,
-      posingGuy: posingGuy
+      posingGuy: posingGuy,
+      girlPortrait: girlPortrait
     };
   },
 }; 
