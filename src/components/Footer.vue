@@ -23,9 +23,15 @@
             <li>Monday to Thursday</li>
             <li>09:00-16:00</li>
             <br>
+<<<<<<< HEAD
             <li class="font-bold hover:text-hvrRed"><router-link to="/Gdpr">GDPR</router-link></li>
             <li class="font-bold hover:text-hvrRed"><router-link to="/about">Career</router-link></li>
             <li class="font-bold hover:text-hvrRed">Return policy</li>
+=======
+            <li class="font-bold hover:hvrRed"><router-link to="/Gdpr">GDPR</router-link></li>
+            <li class="font-bold hover:hvrRed"><router-link to="/about">Career</router-link></li>
+            <li class="font-bold hover:hvrRed">Return policy</li>
+>>>>>>> efce2efafe028b5ff60c23d8cfcebf181e9d68ac
             </ul>
         </div>
     </div>
