@@ -20,8 +20,9 @@ Below you can see our open positions.
 <br><br>
 If the position you are interested in, is not listed below, you are welcome to send us an CV with your work at: job@modulfoto.dk</p>
 </div>
-<section class="">
-   <tabs class="w-8/12 mx-auto" :options="{ useUrlFragment: false }">
+
+<section class="w-12/12 mx-auto">
+   <tabs class="w-6/12 mx-auto" :options="{ useUrlFragment: false }">
        
         <tab name="Photographer">
             <Tabz title="School photograph: Sjælland/Jylland" filename="job2.jpg" ><p>Are you good with children and do you know how to handle your ISO? Then this is the job for you!

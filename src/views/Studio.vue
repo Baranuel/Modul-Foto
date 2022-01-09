@@ -13,8 +13,8 @@ It’s very simple just call us. we set up a meeting and we make magic happen ri
 <div class="w-9/12 mx-auto mt-36 mb-4">
 <i class="fas fa-camera-retro fa-2x text-mainRed"><h3 class="headline-process text-left inline ml-4 font-medium">We Offer</h3></i>
 </div>
-<section class="grey-section">
-   <tabs class="w-8/12 mx-auto" :options="{ useUrlFragment: false }">
+<section class="grey-section w-12/12 mx-auto">
+   <tabs class="w-6/12 mx-auto" :options="{ useUrlFragment: false }">
        
         <tab name="Family Photography">
             <Tabz title="Family Photography" filename="studio1.jpg" ><p class="paragraph-text">
