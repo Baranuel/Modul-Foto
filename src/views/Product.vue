@@ -17,17 +17,18 @@
             </div>
         </div>
             </div>
-            <Bundle :specificProduct="specificProduct" :selectedBundle="selectedBundle"/>
+            <Bundle :specificProduct="specificProduct" :selectedBundle="selectedBundle" v-on:view-bundles="viewBundle($event)"/>
         </div>
         <Divide/>
         <div class="w-9/12 mx-auto  ">
           <h1 class="font-maitree text-4xl p-2">Singles</h1>
         <div class=" flex flex-row flex-wrap  ">
             <div class=" mx-auto min-w-min" v-for="single, i in singles" :key="i">
-                <Single :single="single"/>
+                <Single :product="single" v-on:view-singles="viewSingle($event)"/>
             </div>
         </div>
         </div>
+        <Cart/>
   </div>
 </template>
 
@@ -37,12 +38,16 @@ import User from '../components/User.vue'
 import Divide from '../components/Divide.vue'
 import Bundle from '../components/Bundle.vue'
 import Single from '../components/Single.vue'
+import Cart from '../components/Cart.vue'
+
+
 export default {
     name:"Product",
     components:{ User,
                 Divide,
                 Bundle,
-                Single
+                Single,
+                Cart
     }, 
     data(){
         return{
@@ -53,7 +58,8 @@ export default {
             singles:[],
             bundles:[], 
             selectedBundle:"2022 Standard package",
-            shown:false
+            shown:false,
+            single:null
 
         }
     },
@@ -66,7 +72,14 @@ export default {
         },
     },
     methods:{
-  
+        viewSingle(single){
+            this.single = single
+            console.log(this.single)
+        },
+        viewBundle(bundle){
+            this.bundle = bundle
+            console.log(this.bundle)
+        }
     },
 
     beforeMount(){
@@ -77,7 +90,6 @@ export default {
         this.singles = this.specificProduct.singles
 
 
-        console.log(this.singles)
 
     }
 
