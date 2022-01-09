@@ -26,9 +26,6 @@
             <li class="font-bold hover:text-hvrRed"><router-link to="/Gdpr">GDPR</router-link></li>
             <li class="font-bold hover:text-hvrRed"><router-link to="/about">Career</router-link></li>
             <li class="font-bold hover:text-hvrRed">Return policy</li>
-            <li class="font-bold hover:hvrRed"><router-link to="/Gdpr">GDPR</router-link></li>
-            <li class="font-bold hover:hvrRed"><router-link to="/about">Career</router-link></li>
-            <li class="font-bold hover:hvrRed">Return policy</li>
             </ul>
         </div>
     </div>
