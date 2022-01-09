@@ -11,7 +11,6 @@
                 <h1 class="text-xl" ><strong>{{product.price}}Kr.</strong></h1>
             </div>
             <div class="self-end">
-                <h1>quiantity</h1>
                 <Button @click="$emit('view-singles', product), addToCart()"/>
             </div>
             </div>

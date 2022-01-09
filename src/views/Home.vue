@@ -1,8 +1,9 @@
 <template>
   <Video :mp4="require(`../assets/modulFoto1080v2.mp4`)" />
  
-  <section id="middle" class="w-9/12 mx-auto scroll-mt-8">
-    <h1  class="headline-large text-center">What we do</h1>
+  <section id="middle" class="relative w-9/12 mx-auto scroll-mt-8">
+    <h1 class="headline-large text-center">What we do</h1>
+      <img :src="heart" alt="" class="w-12 absolute top-0 right-80 opacity-60">
     <p class="paragraph-text text-center">
       We create memories which will last forever.
     </p>
@@ -47,7 +48,7 @@
 <script>
 // @ is an alias to /src
 
-
+import svg from '../assets/galleryImages/AssetHeart.svg'
 import Video from "../components/VideoPlayer.vue";
 import Gallery from "../components/Gallery.vue";
 import ReachOut from "../components/ReachOut.vue";
@@ -59,6 +60,11 @@ export default {
     Gallery,
     ReachOut,
   },
+  data(){
+    return{
+      heart:svg
+    }
+  }
 };
 
 </script>

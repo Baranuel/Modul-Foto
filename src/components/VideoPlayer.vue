@@ -7,7 +7,7 @@
     </div>
     </div>
     <div class="arrowWrap w-100">
-    <img @click="scrollToContent" src="../assets/up-arrow.png" alt="">
+    <img @click="scrollToContent" src="../assets/up-arrow.png" alt="" class="hover: cursor-pointer">
     </div>
     <video autoplay muted loop>
       <source :src="mp4" type="video/mp4">

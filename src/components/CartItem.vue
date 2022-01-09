@@ -1,7 +1,7 @@
 <template>
-  <div class="flex shadow-lg justify-center items-center mx-8 my-2 p-6 relative">
+  <div class="flex shadow-lg justify-center items-center mx-8  p-6 relative">
       <div>
-          <img :src="`./assets/`+ product.url" alt="" class="w-16 h-16 object-fill">
+          <img :src="`./assets/`+ product.url" alt="" class="w-12 h-18 object-fill">
       </div>
       <div class="flex flex-col flex-1">
           <div class="flex  justify-between">

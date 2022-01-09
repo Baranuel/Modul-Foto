@@ -65,7 +65,7 @@ We point out that in the event of non-payment, DKK 100 will be added per Reminde
 </div>
 <section class="grey-section pt-8">
     <h2 class="headline-large w-9/12 mx-auto ">Return Policy</h2>
-        <div class="w-9/12 mx-auto border-l-2 border-red-500 pl-20 grid grid-cols-2 gap-y-20 gap-x-20 mb-20">
+        <div class="w-9/12 mx-auto border-l-2 border-red-500 pl-20 grid grid-cols-2 gap-y-20 gap-x-20 mb-10">
         <div class="flex-inline">
         <i class="fas fa-shopping-basket fa-2x mb-8"></i><h6 class="getintouch inline ml-4 text-black font-medium">How to return</h6>
         <p class="paragraph-text">In module photo, we always offer a 3 week full return policy once you have received photos from us.
@@ -106,7 +106,9 @@ Pictures and description, must be sent to: <br>
             You will receive some new pictures as soon as possible.
 </p>
         </div>
-        <router-link to="/contact"><div class="buttonRed w-60">Contact us</div></router-link>
+        </div>
+        <div class="w-9/12 mx-auto px-20 py-8">
+        <router-link to="/contact" class="buttonRed">Contact us</router-link>
         </div>
         </section>
 </template>

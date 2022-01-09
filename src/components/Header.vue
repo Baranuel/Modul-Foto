@@ -14,8 +14,8 @@
           <li class="">
           <button @click="togglePages" aria-expanded="false">Policy   <i class="fas fa-arrow-down text-base"></i> </button>
             <ul class="dropdownMenu mainWhite" aria-hidden="true" :class="{ dropdownMenuBackground: $route.name == 'Home', displayNone: visible == true ,indexNavScroll: scrollPosition > 50 & $route.name == 'Home' }">
-              <li><router-link to="/Gdpr">GDPR</router-link></li>
-              <li><router-link to="/TOS">TOS</router-link></li>
+              <li><router-link to="/Gdpr" @click="togglePages">GDPR</router-link></li>
+              <li><router-link to="/TOS" @click="togglePages">TOS</router-link></li>
             </ul>
           </li>
           
