@@ -33,8 +33,8 @@ export default {
   justify-content: center;
   flex-direction: column;
   width: 40%;
-  height: 300px;
-  border-right: red 1px solid;
+  padding-right: 2rem;
+  border-right: var(--main-red-color) 2px solid;
 }
 
 .tabsImageContainer{
@@ -43,10 +43,9 @@ padding: 2rem 0 2rem 2rem;
 }
 
 .tabsImageContainer img {
-  max-height: 500px;
-  width: 100%;
   object-fit: cover;
-  max-width: 500px;
+  height: 400px;
+  width: 500px;
 
 }
 

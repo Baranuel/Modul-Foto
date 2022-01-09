@@ -33,7 +33,7 @@
   
   <section class="w-9/12 mx-auto">
   <h3  class="headline-large text-center">Our work</h3>
-    <p class="paragraph-text text-center my-16">
+    <p class="paragraph-text text-center mb-16">
       We want to help you create unforgettable moments and share them with the world
     </p>
   </section>
@@ -65,6 +65,9 @@ export default {
 
 <style scoped>
 
+#middle{
+  scroll-margin: 80px;
+}
 
 .controllablePadding{
   padding: 2rem clamp(2rem, 5.5vw, 10rem); 
@@ -75,7 +78,7 @@ export default {
 }
 
 .flexItem{
-  border-right: red 1px solid;
+  border-right: #BB2323 2px solid;
 }
 
 .flexWrapper p{

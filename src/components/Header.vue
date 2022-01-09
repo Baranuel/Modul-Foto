@@ -20,7 +20,7 @@
           </li>
           
 
-          <li id="headerLogin" class="px-2 py-1 bg-blue-100 rounded-sm">
+          <li id="headerLogin" class="px-2 py-1 bg-blue-100 rounded-sm bg-mainRed">
             <router-link to="/login">Login</router-link>
           </li>
         </ul>
@@ -113,7 +113,6 @@ header a {
 
 #headerLogin{
   color: white !important;
-  background-color: red;
 }
 
 .headerFixed{
