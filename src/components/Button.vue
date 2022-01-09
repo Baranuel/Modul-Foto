@@ -1,6 +1,6 @@
 <template>
   <div>
-        <button class="bg-mainRed text-white py-2 px-10">Buy</button>
+        <button class="bg-mainRed text-white py-2 px-10 hover:bg-hvrRed">Buy</button>
   </div>
 </template>
 
