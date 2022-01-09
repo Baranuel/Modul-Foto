@@ -1,7 +1,7 @@
 <template>
      <div class="box bg-white rounded-b-sm">
       <div class="imageContainerStaff">
-        <img class="w-full h-60 object-cover object-center rounded-t-sm" :src="require('/public/assets/' + filename)" :alt="(name)"/>
+        <img class="w-full h-96  object-cover object-top rounded-t-sm" :src="require('/public/assets/' + filename)" :alt="(name)"/>
       </div>
       <h4 class="headline-process text-left text-black my-4 pt-2 px-6">{{ name }}</h4>
       <p class="paragraph-text text-lg px-6 pt-1 pb-4">
