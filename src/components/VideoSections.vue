@@ -4,7 +4,7 @@
   <div class="flex gap-x-36">
 <div class="w-4/12">
   <h2 class="headline-regular mb-8">Schools</h2>
-  <p class="border-l-2 border-red-500 py-2 px-6 paragraph-text">We know that the school portrait and the class picture are far more than just another picture.
+  <p class="border-l-2 border-mainRed py-2 px-6 paragraph-text">We know that the school portrait and the class picture are far more than just another picture.
 
 An old tradition that later in life will evoke clear memories
 of a landmark time in children's lives.
@@ -21,8 +21,6 @@ A small pocket of time that testifies to the world exactly as it looked - withou
 <script>
 export default {
 name: 'Intro',
-props:
-['title']
 }
 </script>
 
