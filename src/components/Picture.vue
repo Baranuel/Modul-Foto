@@ -1,6 +1,6 @@
 <template>
         <div>
-              <img :src="'./assets/' + picture.headline" alt="" class=" object-contain object-center">
+              <img :src="'./assets/' + picture.headline" alt="" class=" object-fill object-center">
         </div>
 </template>
 
