@@ -23,9 +23,9 @@
             <li>Monday to Thursday</li>
             <li>09:00-16:00</li>
             <br>
-            <li class="font-bold">FAQ</li>
-            <li class="font-bold">Career</li>
-            <li class="font-bold">Return policy</li>
+            <li class="font-bold hover:bg-hvrRed"><router-link to="/Gdpr">GDPR</router-link></li>
+            <li class="font-bold hover:bg-hvrRed"><router-link to="/about">Career</router-link></li>
+            <li class="font-bold hover:bg-hvrRed">Return policy</li>
             </ul>
         </div>
     </div>
