@@ -281,18 +281,23 @@ export default [
                     singles:
                             [
                                 {
-                                    name:"1* (18x25)",
-                                    url:"dog.jpg",
+                                    name:"(18x25)",
+                                    url:"dogsesh3.jpg",
                                     price:123
                                 },
                                 {
-                                    name:"2* (13x18)",
-                                    url:"doggo1.jpg",
-                                    price:123
-                                },
-                                {
-                                    name:"28* (3x4)",
+                                    name:" (3x4)",
                                     url:"doggo2.jpg",
+                                    price:123
+                                },
+                                {
+                                    name:" (3x4)",
+                                    url:"dogsesh1.jpg",
+                                    price:123
+                                },
+                                {
+                                    name:" (3x4)",
+                                    url:"dogsesh2.jpg",
                                     price:123
                                 },
                             ]
