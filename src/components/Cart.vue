@@ -9,6 +9,13 @@
       :product="product"
       
       />
+      <div class=" p-6">
+        <div class="flex justify-between">
+      <h1>Total:</h1>
+      <h1>{{cart_total}}</h1>
+
+        </div>
+      </div>
   </div>
 </template>
 
@@ -24,6 +31,9 @@ export default {
     computed:{
         items(){
             return this.$store.getters.cartItems
+        },
+        cart_total(){
+            return this.$store.getters.cartTotal
         }
     }
 }
