@@ -8,7 +8,7 @@ export default [
                 {   
                     name:"1* (30x50)",
                     type:"classPhoto",
-                    headline:"class.jpg",
+                    url:"class.jpg",
                     price:0
                 }
             ],

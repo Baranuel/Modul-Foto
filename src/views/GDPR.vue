@@ -7,7 +7,9 @@
 If you would like to read more about modul foto ApS 'handling of information, you can read below: </p>
 </div>
 
-<div class="grid grid-cols-2 gap-y-20 gap-x-20 pb-20">
+<div class="flex">
+    <div class="mx-4 p-4 ">
+
     <div class="paragraph">
         <h3 class="headline-regular">Where does the information come from?</h3>
         <p class="paragraph-text">When the school / institution orders modul foto ApS to take pictures:
@@ -67,11 +69,14 @@ The anonymized image files are image processed by a sub-data processor.</p>
         <h3 class="headline-regular">On what legal basis is the information disclosed</h3>
         <p class="paragraph-text">The Debt Collection Agency receives information, cf. the Debt Collection Act</p>
     </div>
+    </div>
 
+    <div class="mx-4 p-4">
             <div class="paragraph">
         <h3 class="headline-regular"> Is there a data processor agreement</h3>
         <p class="paragraph-text">Yes, a data processor agreement has been drawn up between modul foto ApS and the school, as well as between modul foto ApS and their sub-data processors.</p>
     </div>
+
 
             <div class="paragraph">
         <h3 class="headline-regular">When does the information expire/be deleted?</h3>
@@ -128,6 +133,7 @@ You have the right to delete the personal information used by modul foto ApS at 
         <h3 class="headline-regular">Is the information transferred to countries outside the EU / EEA</h3>
         <p class="paragraph-text">No.</p>
     </div>
+        </div>
 </div>
 </div>
 </template>

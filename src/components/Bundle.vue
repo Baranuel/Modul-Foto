@@ -15,7 +15,6 @@
                     <h1 class="text-2xl"><strong>{{product.price}} Kr.</strong> </h1>
                 </div> 
                 <div class="">
-                    <h1>Quantity</h1>
                     <Button @click="$emit('view-bundles', product), addBundle()"/>
                 </div>
             </div>
@@ -48,6 +47,7 @@ export default {
         },
         currentBundle(){
                    return this.bundles.find(bundle => bundle.name === "2022 Standard package")
+
         }
 
     },

@@ -20,6 +20,9 @@
 .grey-section {
   background-color:#F9F9F9;
   }
+  .paragraph{
+    padding:2rem
+  }
   .paragraph-text {
     font-family: "Quicksand", sans-serif;
     font-size: 20px;

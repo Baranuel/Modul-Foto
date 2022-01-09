@@ -4,7 +4,7 @@
     <router-link :to="`/user/${currentUser.id}`" class="text-mainRed p-4"> choose different image</router-link>
     </div>
     <Divide/>
-  <div class=" w-9/12 mb-24 mx-auto py-0 ">
+  <div class=" w-9/12 mb-24  mx-auto py-0 ">
         <div class=" w-9/12 mx-auto ">
         <div>
 
@@ -27,8 +27,8 @@
                 <Single :product="single" v-on:view-singles="viewSingle($event)"/>
             </div>
         </div>
-        </div>
         <Cart/>
+        </div>
   </div>
 </template>
 
@@ -79,7 +79,11 @@ export default {
         viewBundle(bundle){
             this.bundle = bundle
             console.log(this.bundle)
-        }
+        },
+        viewClassPhoto(bundle){
+            this.bundle = bundle
+            console.log(this.bundle)
+        },
     },
 
     beforeMount(){

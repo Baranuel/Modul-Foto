@@ -7,6 +7,9 @@
             <div class="gridItem md:row-span-2"> <img :src="posingGuy" alt="" /></div>
             <div class="gridItem sm:col-span-1 md:col-span-1 lg:col-span-1 xl:col-span-2"> <img :src="totalImage" alt="" /></div>
         </div>
+        <div class="flex justify-end">
+        <a href="https://www.instagram.com/modulfoto/" class="py-2 my-4 text-mainRed text-2xl underline"> And way more </a>
+        </div>
   </div>
 </template>
 
