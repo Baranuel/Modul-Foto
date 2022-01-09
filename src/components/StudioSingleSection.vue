@@ -9,7 +9,7 @@
 Just come to the studio, bring your, best official looks, and we’ll be done before you know it,
 fully certiffied, free download
 </p>
-<router-link :to="/Home/"><h4 class="getintouch underline text-left my-12 mx-6 hover:bg-hvrRed">Find us here!</h4></router-link>
+<router-link :to="/Home/"><h4 class="getintouch underline text-left my-12 mx-6 hover:text-hvrRed">Find us here!</h4></router-link>
 </div>
 <img class="object-contain w-6/12 h-96" :src="require('/public/assets/38.jpg')"/>
 </div>

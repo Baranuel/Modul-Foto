@@ -20,7 +20,7 @@
           </li>
           
 
-          <li id="headerLogin" class="px-2 py-1 bg-blue-100 rounded-sm bg-mainRed">
+          <li id="headerLogin" class="px-2 py-1 bg-blue-100 rounded-sm bg-mainRed hover:bg-hvrRed">
             <router-link style="color: white !important" to="/login">Login</router-link>
           </li>
         </ul>

@@ -10,7 +10,7 @@ An old tradition that later in life will evoke clear memories
 of a landmark time in children's lives.
 
 A small pocket of time that testifies to the world exactly as it looked - without a filter.</p>
-<router-link :to="/Home/"><h4 class="getintouch underline text-left my-4 mx-6 hover:bg-hvrRed">Get in touch</h4></router-link>
+<router-link :to="/Home/"><h4 class="getintouch underline text-left my-4 mx-6 hover:text-hvrRed">Get in touch</h4></router-link>
 </div>
 <iframe width="750" height="420" src="https://www.youtube.com/embed/lZi89b3R2s8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>

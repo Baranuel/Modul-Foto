@@ -11,7 +11,7 @@ Our photographers are sweet, professional, and actually quite funny.
 We take pictures at child height and love to spend our day on a playground, filled with cheerful children.
 
 </p>
-<router-link :to="/Home/"><h4 class="getintouch underline text-left my-4 mx-6 hover:bg-hvrRed">Get in touch</h4></router-link>
+<router-link :to="/Home/"><h4 class="getintouch underline text-left my-4 mx-6 hover:text-hvrRed">Get in touch</h4></router-link>
 </div>
 <iframe width="750" height="420" src="https://www.youtube.com/embed/UZFk4INaBh8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
