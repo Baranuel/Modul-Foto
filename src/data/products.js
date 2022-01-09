@@ -248,7 +248,7 @@ export default [
                   [
                      {
                     pictureId:1,
-                    headline:"dog.jpg",
+                    headline:"doggo1.jpg",
                     bundles:
                             [
                                 {
@@ -265,7 +265,7 @@ export default [
                                 
                                 {
                                     name:"2022 Large package",
-                                    url:"dog.jpg",
+                                    url:"doggo1.jpg",
                                     description:
                                                 [
                                                 "1* (18x25)",
@@ -287,12 +287,12 @@ export default [
                                 },
                                 {
                                     name:"2* (13x18)",
-                                    url:"dog.jpg",
+                                    url:"doggo1.jpg",
                                     price:123
                                 },
                                 {
                                     name:"28* (3x4)",
-                                    url:"dog.jpg",
+                                    url:"doggo2.jpg",
                                     price:123
                                 },
                             ]
