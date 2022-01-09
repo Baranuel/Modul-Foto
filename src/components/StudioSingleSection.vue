@@ -14,9 +14,7 @@ fully certiffied, free download
 <img class="object-contain w-6/12 h-96" :src="require('/public/assets/38.jpg')"/>
 </div>
 
-<div class="h-1 w-1/2 border-b-2 border-mainRed mx-auto my-20"></div>
-
-<div class="flex gap-20">
+<div class="flex gap-20 mt-40">
 <div class="w-4/12">
   <h2 class="headline-regular mb-8">Studio Photos</h2>
   <p class="border-l-2 border-mainRed py-2 px-6 paragraph-text">In the studio, we spend 45 minutes taking a series of beautiful photos of your little one. Your child can be quite small, so you are welcome from the time the child is born until the child is approx. half a year.
@@ -25,11 +23,12 @@ We have different blankets to lie on, but feel free to bring your own private th
 </p>
 </div>
 
-<div class="w-6/12 grid grid-cols-2 gap-x-0 gap-y-4 self-end mx-auto">
-<i class="fas fa-map-marker-alt"><h6 class="paragraph-text inline ml-4 font-normal">Falkoner Allé 3 <br> DK-2000 Frederiksberg</h6></i>
+<div class="w-6/12 grid grid-rows-2 gap-x-0 gap-y-4 self-end mx-auto mb-4">
+<h3 class="font-rufina text-2xl">Modul Foto</h3>
+<i class="fas fa-map-marker-alt"><h6 class="paragraph-text inline ml-4">Falkoner Allé 3 DK-2000 Frederiksberg</h6></i>
 <i class="fas fa-phone"><h6 class="paragraph-text inline ml-4">56 76 12 12</h6></i>
 <i class="fas fa-envelope"><h6 class="paragraph-text inline ml-4">modulfoto@modulfoto.dk</h6></i>
-<i class="fas fa-clock"><h6 class="paragraph-text inline ml-4 inline-flex">Monday - Tuesday: <br> 09:00-16.00</h6></i>
+<i class="fas fa-clock"><h6 class="paragraph-text inline ml-4 inline-flex">Monday - Tuesday: 09:00-16.00</h6></i>
 </div>
 
 </div>

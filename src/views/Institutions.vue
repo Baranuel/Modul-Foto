@@ -70,7 +70,7 @@ Therefore, we always try to take your living room photos outdoors, weather permi
         </tab>
 
                 <tab name="Situation photos">
-            <Tabz title="Situation photos in spring" filename="hello3.jpg" ><p class="paragraph-text">
+            <Tabz title="Situation photos in spring" filename="ben-wicks-iDCtsz-INHI-unsplash.jpg" ><p class="paragraph-text">
             The light, colors and joy of life in spring provide optimal conditions for good pictures. That is why it is in the spring months that we - at the same time as a portrait photography, offer to take our popular situation photos.
 <br><br>
  Our photographer plays on the playground and takes pictures from the children's everyday life.
