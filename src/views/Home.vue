@@ -15,7 +15,7 @@
           organize and conduct a photography sessions at your <span class="font-bold">school,
           kindergarten</span> or other child institutions.
         </p>
-        <a class="buttonRed my-6" href="">Explore</a>
+        <a class="buttonRed my-6 hover:bg-hvrRed" href="">Explore</a>
       </div>
       <div class="controllablePadding">
         <h2 class="headline-regular">Studio</h2>
@@ -24,7 +24,7 @@
           <span class="font-bold"> family, proffessional</span> and <span class="font-bold">passport photos</span>. Just bring what you want
           and let us take care of everything!
         </p>
-          <a class="buttonRed my-6" href="">Explore</a>
+          <a class="buttonRed my-6 hover:bg-hvrRed" href="">Explore</a>
       </div>
      
     </div>

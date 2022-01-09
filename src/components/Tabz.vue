@@ -35,6 +35,7 @@ export default {
   width: 40%;
   padding-right: 2rem;
   border-right: var(--main-red-color) 2px solid;
+  min-height: 250px;
 }
 
 .tabsImageContainer{

@@ -3,7 +3,7 @@
       <h4 class="headline-regular text-center mb-0">Reach out</h4>
       <p class="paragraph-text text-center">Let's create memories. Get in touch</p>
        <Divide/>
-      <a class="buttonRed bg-mainRed" href="">Contact us</a>
+      <a class="buttonRed bg-mainRed hover:bg-hvrRed" href="">Contact us</a>
   </div> 
 </template>
 
