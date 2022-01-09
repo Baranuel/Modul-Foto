@@ -1,5 +1,5 @@
 <template>
-  <Header v-bind:class="{ active: isActive }"/>
+  <Header/>
   <Margintop v-if="$route.name !== 'Home'" />
 
  <router-view/>

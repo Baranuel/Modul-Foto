@@ -1,8 +1,9 @@
 <template>
-<footer class="flex justify-center bg-red-100 py-16">
-    <div class="footerWrapper flex w-9/12 mx-auto justify-between text-left items-center">
+<footer class="bg-red-100 py-16">
+    <div class="footerWrapper flex w-9/12 mx-auto justify-between items-center paragraph-text ">
         <div>
-            <ul>
+            <ul class="w-52">
+                <address class="not-italic">
                 <li class="font-bold">Address</li>
                 <li>Falkoner Alle 3</li>
                 <li>2000 Frederiksberg</li>
@@ -10,13 +11,14 @@
                 <li>Tlf: 56 76 12 12</li>
                 <li>Modulfoto@modulfoto.dk</li>
                 <li>CVR 11011802</li>
+                </address>
             </ul>
         </div>
-        <div>
+        <div class="font-rufina">
             modul foto
         </div>
         <div>
-            <ul>
+            <ul class="w-52">
             <li class="font-bold font-quicksand">Opening hours</li>
             <li>Monday to Thursday</li>
             <li>09:00-16:00</li>

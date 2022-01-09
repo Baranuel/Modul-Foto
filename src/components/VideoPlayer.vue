@@ -2,12 +2,12 @@
 
 <div class="videoWrapper">
     <div class="texttest w-9/12 mx-auto font-quicksand">
-    <div class="textWidth lg:text-6xl sm:text-4xl">
+    <div class="textWidth lg:text-6xl sm:text-2xl md:text-6xl xl:text-6xl">
         Photographs that create smiles and memories
     </div>
     </div>
     <div class="arrowWrap w-100">
-    <img  src="../assets/up-arrow.png" alt="">
+    <img @click="scrollToContent" src="../assets/up-arrow.png" alt="">
     </div>
     <video autoplay muted loop>
       <source :src="mp4" type="video/mp4">
@@ -20,6 +20,11 @@ export default {
   name: "Video",
   props: {
     mp4: String
+  },
+  methods: {
+    scrollToContent() {
+      document.querySelector('#middle').scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+    }
   }
 }
 </script>
