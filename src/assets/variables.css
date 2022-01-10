@@ -1,6 +1,8 @@
 :root {
   --main-red-color: #BB2323;
 }
+
+
 @import url('https://fonts.googleapis.com/css2?family=Maitree:wght@300;400&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap");
@@ -20,25 +22,12 @@
 .grey-section {
   background-color:#F9F9F9;
   }
-  .paragraph{
-    padding:2rem
-  }
   .paragraph-text {
     font-family: "Quicksand", sans-serif;
     font-size: 20px;
-    line-height: 1.9rem;
+    line-height: 2rem;
     text-align: left;
-    min-width:min-content
-    }
 
-  .paragraph-text-cards {
-    font-family: "Quicksand", sans-serif;
-    font-size: 16px;
-    padding:1rem;
-    line-height: 1.9rem;
-    text-align: left;
-    height:40%;
-    min-width:min-content
     }
     
     .headline-large {
@@ -86,6 +75,12 @@
       display: inline-block;
       padding: 0.2em 2em;
       text-align: center;
+      }
+
+      .buttonRed:focus{
+        outline: rgb(12, 117, 255) 3px solid;
+        background: #991c1c;
+        transform: scale(1.1);
       }
 
      .mainWhite{

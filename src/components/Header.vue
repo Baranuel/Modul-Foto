@@ -5,6 +5,7 @@
       <h1 class="font-rufina font-normal">modul foto</h1>
       <nav id="nav" role="navigation">
         <ul class="flex items-center justify-around">
+         
           <li><router-link to="/">Home</router-link></li>
           <li><router-link to="/about">About</router-link></li>
           <li><router-link to="/studio">Studio</router-link></li>
@@ -41,6 +42,8 @@ export default {
         updateScroll() {
        this.scrollPosition = window.scrollY
     },
+    
+
     togglePages(){
       this.visible = !this.visible
     }
@@ -52,6 +55,10 @@ export default {
 </script>
 
 <style scoped>
+
+.headline-large:focus{
+  background-color: blue;
+}
 
 .dropdownMenu{
   padding: 0rem 0;
@@ -95,6 +102,7 @@ header{
  
 }
 
+ 
 
 li {
   margin-left: clamp(2rem, 3vw, 3rem); ;
