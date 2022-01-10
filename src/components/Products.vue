@@ -1,9 +1,9 @@
 <template>
-<div class="  w-9/12 flex flex-col justify-center items-center mx-auto my-8">
+<div class="w-9/12 flex flex-col justify-center items-center mx-auto my-8">
         <h1 class="self-start font-maitree text-4xl p-4">Your Pictures</h1>
   <div class="grid  w-9/12 xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-2  grid-rows-auto gap-4 gap-y-6 m-6" >
       <div v-for="picture in photos" :key="picture.pictureId"
-        class="  bg-black justify-self-center shadow-xl customShadow"
+        class="focus-big  bg-black justify-self-center shadow-xl customShadow"
         >
         <div class=" ">
             <router-link :to="`${user.name}/product/${picture.pictureId}`">
@@ -112,6 +112,12 @@ export default {
     cursor: pointer;
     transform: scale(1.05);
     box-shadow: -2px 2px 9px 1px rgb(110, 109, 109);
+}
+
+.customShadow:focus{
+    
+    transform: scale(1.05);
+    outline: 1px red solid;
 }
 
 </style>
