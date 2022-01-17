@@ -7,10 +7,11 @@
     <p class="paragraph-text text-center">
       We create memories which will last forever.
     </p>
+    <button @click="testFunction()">Test button</button>
 
     <div class="flexWrapper my-48 justify-center">
       <div class="flexItem controllablePadding">
-        <h2 class="headline-regular">Institutions</h2>
+        <h2 id="helperTest" tabindex="-1" ref="mydiv" class="headline-regular">Institutions</h2>
         <p class="paragraph-text max-w-prose">
           We are a team of great people who love to spend time with children. We
           organize and conduct a photography sessions at your <span class="font-bold">school,
@@ -62,9 +63,22 @@ export default {
   },
   data(){
     return{
-      heart:svg
+      heart:svg,
+      
     }
-  }
+  },
+   methods: {
+     testFunction(){
+       this.imref.focus();
+     }
+   },
+
+  mounted() {
+   console.log('mydiv = ' + this.$refs.mydiv)
+    console.log(this.$refs)
+    this.imref = this.$refs.mydiv;
+  },
+
 };
 
 </script>

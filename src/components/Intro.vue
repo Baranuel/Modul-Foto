@@ -1,7 +1,7 @@
 <template>
 <div class="mb-28">
 <div class="w-9/12 mx-auto">
-  <h1 class="headline-large mb-24">{{ title }}</h1>
+  <h1 tabindex="-1" ref="mainContent" class="headline-large mb-24">{{ title }}</h1>
   <div class="flex gap-x-36 items-center">
 <div class="w-4/12">
   <h2 class="headline-regular">{{ subtitle }}</h2>

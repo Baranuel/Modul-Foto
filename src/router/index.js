@@ -103,10 +103,15 @@ const routes = [
 const router = createRouter({
   history: createWebHashHistory(),
   routes,
- scrollBehavior:()=> {
-    return { left:0, top:0 }
-  }
-
+  scrollBehavior: function(to) {
+    if (to.hash) {
+        return {selector: to.hash}
+        //Or for Vue 3:
+        //return {el: to.hash}
+    } else {
+        return { x: 0, y: 0 }
+    }
+},
 })
 
 router.afterEach(to => {

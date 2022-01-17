@@ -15,8 +15,8 @@ export default {
 
 .monkey:focus{
       outline: rgb(12, 117, 255) 3px solid;
-        background: #991c1c;
-        transform: scale(1.1);
+      background: #991c1c;
+      transform: scale(1.1);
 }
 
 </style>

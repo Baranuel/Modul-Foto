@@ -5,9 +5,15 @@
       <h1 class="font-rufina font-normal">modul foto</h1>
       <nav id="nav" role="navigation">
         <ul class="flex items-center justify-around">
+
+        
+          <button @click="goto()">Id</button>
+          <button @click="gotoRef()">Refs</button>
+          
          
-          <li><router-link @click="focusTitle" to="/">Home</router-link></li>
-          <li><router-link @click="focusTitle" to="/about">About</router-link></li>
+         
+          <li><router-link to="/" aria-label="Home">Home</router-link></li>
+          <li><router-link to="/about">About</router-link></li>
           <li><router-link to="/studio">Studio</router-link></li>
           <li><router-link to="/Institutions">Institutions</router-link></li>
       
@@ -33,26 +39,31 @@
 
 <script>
 
+
 export default {
+
     data() {
     return { scrollPosition: null,
-    visible: true }
+    visible: true,
+ 
+    }
   },
   methods: {
         updateScroll() {
        this.scrollPosition = window.scrollY
     },
-    
+  
     togglePages(){
       this.visible = !this.visible
     },
-    focusTitle(){
-        console.log(this.$refs.pageTitle);
-    }
+     goto(){
+       this.helperTest.focus()
+     }
+
   },
   mounted() {
     window.addEventListener('scroll', this.updateScroll);
-  }
+  },
 };
 </script>
 

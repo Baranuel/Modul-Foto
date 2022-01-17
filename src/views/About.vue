@@ -1,6 +1,6 @@
 <template>
 
-<Intro title="About us" subtitle="Modul Foto" introImg="60.jpg">
+<Intro ref="myDiv"  title="About us" subtitle="Modul Foto" introImg="60.jpg">
   <p class="border-l-2 border-red-500 py-2 px-6 paragraph-text">
     We have taken photos at Modul Foto for over 30 years now.
 <br><br>
