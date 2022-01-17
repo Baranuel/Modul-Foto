@@ -9,12 +9,16 @@ import GDPR from '../views/GDPR.vue'
 import ToS from '../views/ToS.vue'
 import Contact from '../views/Contact.vue'
 
+
 // we are in the main
 const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: Home,
+    meta: {
+      title: 'Modul foto'
+    }
   },
   {
     path: '/about',
@@ -22,47 +26,70 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue'),
+    meta: {
+      title: 'About us'
+    }
   },
   {
     path: '/login',
     name: 'login',
-    component:Login
+    component:Login,
+    meta: {
+      title: 'User login page'
+    }
   },
   {
     path: '/user/:id',
     name: 'user',
-    component:Shop
+    component:Shop,
+    meta: {
+      title: 'Test title'
+    }
   },
   {
     path: '/user/:name/product/:id',
     name: 'product',
-    component:Product
+    component:Product,    meta: {
+      title: 'Test title'
+    }
   },
   {
     path: '/studio',
     name: 'Studio',
-    component:Studio
+    component:Studio,
+    meta: {
+      title: 'Our studio'
+    }
   },
   {
     path: '/institutions',
     name: 'institutions',
-    component:Institutions
+    component:Institutions,
+    meta: {
+      title: 'Institutions'
+    }
   },
   {
     path: '/GDPR',
     name: 'GDPR',
-    component:GDPR
+    component:GDPR,    meta: {
+      title: 'GDRP rules'
+    }
   },
   {
     path: '/ToS',
     name: 'ToS',
-    component:ToS
+    component:ToS,    meta: {
+      title: 'Terms of service'
+    }
   },
   {
     path: '/Contact',
     name: 'Contact',
-    component:Contact
+    component:Contact,    meta: {
+      title: 'Contact us'
+    }
   },
   
   
@@ -82,5 +109,11 @@ const router = createRouter({
 
 })
 
+router.afterEach(to => {
+  if (to.meta.title) {
+    document.title = `${to.meta.title}`;
+  }
+});
 
 export default router
+

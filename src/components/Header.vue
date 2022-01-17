@@ -6,8 +6,8 @@
       <nav id="nav" role="navigation">
         <ul class="flex items-center justify-around">
          
-          <li><router-link to="/">Home</router-link></li>
-          <li><router-link to="/about">About</router-link></li>
+          <li><router-link @click="focusTitle" to="/">Home</router-link></li>
+          <li><router-link @click="focusTitle" to="/about">About</router-link></li>
           <li><router-link to="/studio">Studio</router-link></li>
           <li><router-link to="/Institutions">Institutions</router-link></li>
       
@@ -43,9 +43,11 @@ export default {
        this.scrollPosition = window.scrollY
     },
     
-
     togglePages(){
       this.visible = !this.visible
+    },
+    focusTitle(){
+        console.log(this.$refs.pageTitle);
     }
   },
   mounted() {
@@ -98,9 +100,7 @@ header{
   background-color: rgb(29, 29, 29) !important;
 }
 
-.navScroll{
- 
-}
+
 
  
 
