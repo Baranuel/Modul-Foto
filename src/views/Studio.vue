@@ -1,5 +1,5 @@
 <template>
-<Intro title="Studio" subtitle="Come to the studio" introImg="69.jpg">
+<Intro title="Studio" id="scrollhere" tabindex="-1" subtitle="Come to the studio" introImg="69.jpg">
     <p class="border-l-2 border-red-500 py-2 px-6 paragraph-text">
     Book an appointment with us so we can spend some quality time on making sure you leave with the greatest photos possible.
 <br><br>

@@ -1,5 +1,5 @@
 <template>
-  <h2 class="headline-large w-9/12 mx-auto mt-0 mb-24">Contact information</h2>
+  <h2 id="scrollhere" tabindex="-1" class="headline-large w-9/12 mx-auto mt-0 mb-24">Contact information</h2>
   <div class="w-9/12 mx-auto grid grid-cols-3 gap-y-20 gap-x-20 mb-5">
         <div class="flex-inline">
         <h6 class="headline-regular text-black font-medium">Find us here</h6>

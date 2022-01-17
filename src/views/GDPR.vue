@@ -2,7 +2,7 @@
 <div class="w-9/12 mx-auto">
     <div class="intro my-20">
         <i class="fas fa-user-shield fa-4x"></i>
-        <h2 class="headline-large inline ml-8">GDPR</h2>
+        <h2 id="scrollhere" tabindex="-1" class="headline-large inline ml-8">GDPR</h2>
         <p class="paragraph-text my-8">The Data Protection Regulation, also known as the General Data Protection Regulation (GDPR) is a comprehensive new EU law on data protection that will give individuals better data protection in the EU. At modul foto ApS, we will update our systems and processes to prepare for the GDPR's entry into force on 25 May 2018. <br>
 If you would like to read more about modul foto ApS 'handling of information, you can read below: </p>
 </div>

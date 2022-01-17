@@ -2,13 +2,12 @@
   <Video :mp4="require(`../assets/modulFoto1080v2.mp4`)" />
  
   <section id="middle" class="relative w-9/12 mx-auto scroll-mt-8">
-    <h1 class="headline-large text-center">What we do</h1>
+    <h1 id="scrollhere" tabindex="-1" class="headline-large text-center">What we do</h1>
       <img :src="heart" alt="" class="w-12 absolute top-0 right-80 opacity-60">
     <p class="paragraph-text text-center">
       We create memories which will last forever.
     </p>
-    <button @click="testFunction()">Test button</button>
-
+ 
     <div class="flexWrapper my-48 justify-center">
       <div class="flexItem controllablePadding">
         <h2 id="helperTest" tabindex="-1" ref="mydiv" class="headline-regular">Institutions</h2>
@@ -33,7 +32,7 @@
 
   </section >
   
-  <section class="w-9/12 mx-auto">
+  <section  class="w-9/12 mx-auto">
   <h3  class="headline-large text-center">Our work</h3>
     <p class="paragraph-text text-center mb-16">
       We want to help you create unforgettable moments and share them with the world

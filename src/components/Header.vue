@@ -6,16 +6,12 @@
       <nav id="nav" role="navigation">
         <ul class="flex items-center justify-around">
 
-        
-          <button @click="goto()">Id</button>
-          <button @click="gotoRef()">Refs</button>
-          
+          <button @click="skipNavigation()">Skip to content</button>
          
-         
-          <li><router-link to="/" aria-label="Home">Home</router-link></li>
-          <li><router-link to="/about">About</router-link></li>
-          <li><router-link to="/studio">Studio</router-link></li>
-          <li><router-link to="/Institutions">Institutions</router-link></li>
+          <li><router-link @click="refocus()" to="/" aria-label="Home">Home</router-link></li>
+          <li><router-link @click="refocus()" to="/about">About</router-link></li>
+          <li><router-link @click="refocus()" to="/studio">Studio</router-link></li>
+          <li><router-link @click="refocus()" to="/Institutions">Institutions</router-link></li>
       
           <li><router-link to="/Contact">Contact</router-link></li>
           <li class="">
@@ -58,6 +54,16 @@ export default {
     },
      goto(){
        this.helperTest.focus()
+     },
+     skipNavigation(){
+       let element = document.querySelector('#scrollhere')
+       element.scrollIntoView({behavior: 'smooth'});
+       element.focus()
+     },
+     refocus(){
+        let element = document.querySelector('#app')
+       element.scrollIntoView({behavior: 'smooth'});
+       element.focus()
      }
 
   },

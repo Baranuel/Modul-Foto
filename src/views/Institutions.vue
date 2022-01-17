@@ -1,5 +1,5 @@
 <template>
-<Intro title="Institutions" subtitle="Our approach" introImg="70.jpg">
+<Intro title="Institutions" id="scrollhere" tabindex="-1" subtitle="Our approach" introImg="70.jpg">
      <p class="border-l-2 border-red-500 py-2 px-6 paragraph-text">
     We love to work with children. It is the enthusiasm they have which makes our work not feel like work at all. <br><br>
 We are more than just a photographs, we try to become friends with everyone we meet and that’s what we usually achieve.

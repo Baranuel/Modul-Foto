@@ -1,6 +1,6 @@
 <template>
 <div class=" pt-8 pb-16 ">
-    <h2 class="headline-large w-9/12 mx-auto">Terms of Sale</h2>
+    <h2 id="scrollhere" tabindex="-1" class="headline-large w-9/12 mx-auto">Terms of Sale</h2>
         <div class="w-9/12 mx-auto border-l-2 border-red-500 pl-20 grid grid-cols-2 gap-y-20 gap-x-20 mb-20">
         <div class="flex-inline">
         <i class="fas fa-shopping-basket fa-2x mb-8"></i><h6 class="getintouch inline ml-4 text-black font-medium">Conditions for first order</h6>
