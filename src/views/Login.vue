@@ -1,9 +1,9 @@
 <template>
 <div class="h-64 bg-gray-100 w-9/12 mx-auto mt-8 flex flex-row justify-center items-center">
       <div id="active" class="" v-for="user in data" :key="user.id">
-          <router-link :to="`/user/${user.id}`">
+
           <User :user="user" class="text-left p-4 m-4 border border-red-300"/>
-          </router-link>
+
       </div>
       </div>
 </template>
